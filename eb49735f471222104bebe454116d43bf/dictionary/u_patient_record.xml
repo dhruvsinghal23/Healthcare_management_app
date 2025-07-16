@@ -3,6 +3,7 @@
         <element attributes="edge_encryption_enabled=true" label="Internal Notes" max_length="40" name="u_internal_notes" type="journal_input"/>
         <element attributes="edge_encryption_enabled=true" label="Internal Notes" max_length="4000" name="u_journal_1" type="journal"/>
         <element attributes="edge_encryption_enabled=true" label="Age" mandatory="true" max_length="40" name="u_age" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Palindrome Number" max_length="40" name="u_input_name" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Priority History" max_length="4000" name="u_priority_history" type="journal"/>
         <element label="ContactNumber" max_length="40" name="u_contactnumber" type="phone_number_e164"/>
         <element attributes="edge_encryption_enabled=true" label="Escalation Status" max_length="40" name="u_escalation_status" type="string"/>
