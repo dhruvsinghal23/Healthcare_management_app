@@ -2,7 +2,7 @@
     <sys_app action="INSERT_OR_UPDATE">
         <active>true</active>
         <can_edit_in_studio>true</can_edit_in_studio>
-        <enforce_license>none</enforce_license>
+        <enforce_license>log</enforce_license>
         <guided_setup_guid/>
         <hide_on_ui>false</hide_on_ui>
         <ide_created>DS</ide_created>
@@ -32,13 +32,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-06-28 13:40:45</sys_created_on>
         <sys_id>eb49735f471222104bebe454116d43bf</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-28 13:40:45</sys_updated_on>
+        <sys_updated_on>2025-07-17 13:28:57</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <uninstall_blocked>false</uninstall_blocked>
-        <user_role/>
+        <user_role display_value="healthcare_admin" name="healthcare_admin">ce2aff9f471222104bebe454116d43eb</user_role>
         <vendor/>
         <vendor_prefix/>
         <version>1.0.0</version>
