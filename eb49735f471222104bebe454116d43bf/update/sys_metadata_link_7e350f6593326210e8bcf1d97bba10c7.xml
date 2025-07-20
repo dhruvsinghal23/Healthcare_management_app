@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>3773692c93762210e8bcf1d97bba1081</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="u_patient_record">
+    <u_patient_record action="INSERT_OR_UPDATE">
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-14 10:15:16</sys_created_on>
+        <sys_id>3773692c93762210e8bcf1d97bba1081</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-16 06:31:47</sys_updated_on>
+        <u_address>khfb3ifb</u_address>
+        <u_age/>
+        <u_age1>24</u_age1>
+        <u_contact_number>88948248102</u_contact_number>
+        <u_contactnumber/>
+        <u_date_of_birth>2025-07-15</u_date_of_birth>
+        <u_email>dhruvvnewemail@gmail.com</u_email>
+        <u_escalation_status/>
+        <u_first_name>Sid</u_first_name>
+        <u_gender>male</u_gender>
+        <u_input_name>141</u_input_name>
+        <u_internal_notes/>
+        <u_journal_1/>
+        <u_lab_results/>
+        <u_last_name>diman</u_last_name>
+        <u_number>PAT0001003</u_number>
+        <u_phone_number>+918092781256</u_phone_number>
+        <u_priority>high</u_priority>
+        <u_priority_history/>
+        <u_status>new</u_status>
+        <u_vip>true</u_vip>
+        <u_work_notes/>
+    </u_patient_record>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-17 19:55:15</sys_created_on>
+        <sys_id>7e350f6593326210e8bcf1d97bba10c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PAT0001003</sys_name>
+        <sys_package display_value="Healthcare Management " source="eb49735f471222104bebe454116d43bf">eb49735f471222104bebe454116d43bf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_update_name>sys_metadata_link_7e350f6593326210e8bcf1d97bba10c7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-17 19:55:15</sys_updated_on>
+        <tablename>u_patient_record</tablename>
+    </sys_metadata_link>
+</record_update>

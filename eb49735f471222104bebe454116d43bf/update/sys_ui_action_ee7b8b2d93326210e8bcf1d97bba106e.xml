@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name>discharge_patient</action_name>
+        <action_name>insurance_update</action_name>
         <active>true</active>
-        <client>true</client>
+        <client>false</client>
         <client_script_v2><![CDATA[function onClick(g_form) {
 
 }]]></client_script_v2>
@@ -27,56 +27,44 @@
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
         <messages/>
-        <name>Discharge Patient</name>
-        <onclick>dischargePatient();</onclick>
+        <name>Insurance Update</name>
+        <onclick/>
         <order>100</order>
-        <script><![CDATA[function dischargePatient() {
-	g_form.setValue('u_status', 'discharged');
-	gsftSubmit(null, g_form.getFormElement(), 'discharge_patient');
-}
-
-if(typeof window == 'undefined') 
-{
-	var _roomId = current.u_room_number;
-	current.u_status = 'discharged';
-	current.u_room_number = '0';
-	current.u_occupied_beds -=1;
-	current.update();
-	gs.addInfoMessage('Patient is Discharged');
-	action.setRedirectURL(current);
-}]]></script>
-        <show_insert>false</show_insert>
+        <script><![CDATA[current.update();
+gs.addInfoMessage('Updated');
+action.setRedirectURL(current);]]></script>
+        <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
         <show_update>true</show_update>
         <sys_class_name>sys_ui_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-07-17 18:26:39</sys_created_on>
+        <sys_created_on>2025-07-17 20:23:06</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>bbfe6e6993be2210e8bcf1d97bba1004</sys_id>
-        <sys_mod_count>10</sys_mod_count>
-        <sys_name>Discharge Patient</sys_name>
+        <sys_id>ee7b8b2d93326210e8bcf1d97bba106e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Insurance Update</sys_name>
         <sys_overrides/>
         <sys_package display_value="Healthcare Management " source="eb49735f471222104bebe454116d43bf">eb49735f471222104bebe454116d43bf</sys_package>
         <sys_policy/>
         <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
-        <sys_update_name>sys_ui_action_bbfe6e6993be2210e8bcf1d97bba1004</sys_update_name>
+        <sys_update_name>sys_ui_action_ee7b8b2d93326210e8bcf1d97bba106e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-18 06:20:58</sys_updated_on>
-        <table>u_room</table>
+        <sys_updated_on>2025-07-17 20:23:06</sys_updated_on>
+        <table>u_insurance</table>
         <ui11_compatible>true</ui11_compatible>
-        <ui16_compatible>true</ui16_compatible>
+        <ui16_compatible>false</ui16_compatible>
     </sys_ui_action>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
-        <id>bbfe6e6993be2210e8bcf1d97bba1004</id>
+        <id>ee7b8b2d93326210e8bcf1d97bba106e</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-07-17 18:26:38</sys_created_on>
-        <sys_id>b4f036e993be2210e8bcf1d97bba1046</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_created_on>2025-07-17 20:23:05</sys_created_on>
+        <sys_id>ae9b43e993326210e8bcf1d97bba108d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-18 05:38:47</sys_updated_on>
+        <sys_updated_on>2025-07-17 20:23:05</sys_updated_on>
         <table>sys_ui_action</table>
-        <use_es_latest>false</use_es_latest>
+        <use_es_latest>true</use_es_latest>
     </sys_es_latest_script>
 </record_update>
