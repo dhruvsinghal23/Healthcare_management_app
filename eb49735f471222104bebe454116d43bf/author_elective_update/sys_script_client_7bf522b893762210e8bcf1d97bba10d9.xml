@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Test g_form.addFormMessage</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+    // Info, Warning, and Error messages
+    g_form.addFormMessage('Info message', 'info');
+    g_form.addFormMessage('Warning message', 'warning');
+    g_form.addFormMessage('Error message', 'error');
+    g_form.addFormMessage('Info2 message', 'info');
+    g_form.addFormMessage('Warning2 message', 'warning');
+    g_form.addFormMessage('Error2 message', 'error');
+
+    // Message with a Button
+    g_form.addFormMessage(
+        'Would you like to reassign this to yourself?',
+        'info',
+        {
+            buttons: [
+                {
+                    label: 'Assign to me',
+                    actionName: 'assign_to_me'
+                }
+            ],
+            meta: {
+                userId: g_user.userID
+            }
+        }
+    );
+	g_form.onActionClick(function(actionName, meta) {
+    if (actionName === 'assign_to_me') {
+        g_form.setValue('assigned_to', meta.userId);
+        g_form.addInfoMessage('Ticket assigned to you!');
+    }
+});
+
+}
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-15 09:44:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7bf522b893762210e8bcf1d97bba10d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Test g_form.addFormMessage</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Healthcare Management " source="eb49735f471222104bebe454116d43bf">eb49735f471222104bebe454116d43bf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_update_name>sys_script_client_7bf522b893762210e8bcf1d97bba10d9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-15 09:44:24</sys_updated_on>
+        <table>u_patient_record</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</application>
+        <file_path/>
+        <instance_id>814c904793186210d9f6ddd548373cf9</instance_id>
+        <instance_name>dev303058</instance_name>
+        <name>sys_script_client_7bf522b893762210e8bcf1d97bba10d9</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Test g_form.addFormMessage&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+    // Info, Warning, and Error messages
+    g_form.addFormMessage('Info message', 'info');
+    g_form.addFormMessage('Warning message', 'warning');
+    g_form.addFormMessage('Error message', 'error');
+    g_form.addFormMessage('Info2 message', 'info');
+    g_form.addFormMessage('Warning2 message', 'warning');
+    g_form.addFormMessage('Error2 message', 'error');
+
+    // Message with a Button
+    g_form.addFormMessage(
+        'Would you like to reassign this to yourself?',
+        'info',
+        {
+            buttons: [
+                {
+                    label: 'Assign to me',
+                    actionName: 'assign_to_me'
+                }
+            ],
+            meta: {
+                userId: g_user.userID
+            }
+        }
+    );
+	g_form.onActionClick(function(actionName, meta) {
+    if (actionName === 'assign_to_me') {
+        g_form.setValue('assigned_to', meta.userId);
+        g_form.addInfoMessage('Ticket assigned to you!');
+    }
+});
+
+}
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-15 09:44:24&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;7bf522b893762210e8bcf1d97bba10d9&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Test g_form.addFormMessage&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Healthcare Management " source="eb49735f471222104bebe454116d43bf"&gt;eb49735f471222104bebe454116d43bf&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Healthcare Management "&gt;eb49735f471222104bebe454116d43bf&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_7bf522b893762210e8bcf1d97bba10d9&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-15 09:44:24&lt;/sys_updated_on&gt;&lt;table&gt;u_patient_record&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>679855086</payload_hash>
+        <record_name>Test g_form.addFormMessage</record_name>
+        <reverted_from/>
+        <source>0e590ef493f22210e8bcf1d97bba104c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-15 09:44:24</sys_created_on>
+        <sys_id>5336a23c93762210e8bcf1d97bba10de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1980d789bf00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-15 09:44:24</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>1736a23c7c762210e2aab74feb0d2add</update_guid>
+        <update_guid_history>1736a23c7c762210e2aab74feb0d2add:679855086</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-15 09:45:35</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>808278c6eb1540b0b88b58cd4d93a5e9</sys_id>
+        <sys_metadata>7bf522b893762210e8bcf1d97bba10d9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Test g_form.addFormMessage</sys_name>
+        <sys_package display_value="Healthcare Management " source="eb49735f471222104bebe454116d43bf">eb49735f471222104bebe454116d43bf</sys_package>
+        <sys_parent display_value="Patient">aeba3313475222104bebe454116d43b5</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_scope_delete display_value="">777693b6033f4472835f22a0c4fb6961</sys_scope_delete>
+        <sys_update_name>sys_script_client_7bf522b893762210e8bcf1d97bba10d9</sys_update_name>
+        <sys_update_version display_value="sys_script_client_7bf522b893762210e8bcf1d97bba10d9">5336a23c93762210e8bcf1d97bba10de</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-15 09:45:35</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

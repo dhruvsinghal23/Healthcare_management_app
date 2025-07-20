@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_action_role">
+    <sys_ui_action_role action="DELETE">
+        <sys_class_name>sys_ui_action_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-17 10:40:31</sys_created_on>
+        <sys_id>e1e5412993b62210e8bcf1d97bba10fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Reschedule.healthcare_staff</sys_name>
+        <sys_package display_value="Healthcare Management " source="eb49735f471222104bebe454116d43bf">eb49735f471222104bebe454116d43bf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_ui_action display_value="Reschedule">9fda3f1193722210e8bcf1d97bba10ed</sys_ui_action>
+        <sys_update_name>sys_ui_action_role_e1e5412993b62210e8bcf1d97bba10fd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-17 10:40:31</sys_updated_on>
+        <sys_user_role display_value="healthcare_staff" name="healthcare_staff">810a7f9f471222104bebe454116d43b9</sys_user_role>
+    </sys_ui_action_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</application>
+        <file_path/>
+        <instance_id>814c904793186210d9f6ddd548373cf9</instance_id>
+        <instance_name>dev303058</instance_name>
+        <name>sys_ui_action_role_e1e5412993b62210e8bcf1d97bba10fd</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_action_role"><sys_ui_action_role action="INSERT_OR_UPDATE"><sys_class_name>sys_ui_action_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-17 10:40:31</sys_created_on><sys_id>e1e5412993b62210e8bcf1d97bba10fd</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Reschedule.healthcare_staff</sys_name><sys_package display_value="Healthcare Management " source="eb49735f471222104bebe454116d43bf">eb49735f471222104bebe454116d43bf</sys_package><sys_policy/><sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope><sys_ui_action display_value="Reschedule">9fda3f1193722210e8bcf1d97bba10ed</sys_ui_action><sys_update_name>sys_ui_action_role_e1e5412993b62210e8bcf1d97bba10fd</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-17 10:40:31</sys_updated_on><sys_user_role display_value="healthcare_staff" name="healthcare_staff">810a7f9f471222104bebe454116d43b9</sys_user_role></sys_ui_action_role></record_update>]]></payload>
+        <payload_hash>-157618306</payload_hash>
+        <record_name>Reschedule.healthcare_staff</record_name>
+        <reverted_from/>
+        <source>33f29bfc933a2210e8bcf1d97bba10fb</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-17 10:40:31</sys_created_on>
+        <sys_id>bc46856993b62210e8bcf1d97bba102b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19817f8b3ea0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-17 10:40:31</sys_updated_on>
+        <type>UI Action Role</type>
+        <update_guid>b0468569afb6221044d6388e8ea5992b</update_guid>
+        <update_guid_history>b0468569afb6221044d6388e8ea5992b:-157618306</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-17 18:06:10</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_action_role">sys_ui_action_role</sys_db_object>
+        <sys_id>186db785e4d5400483458a39d1689431</sys_id>
+        <sys_metadata>e1e5412993b62210e8bcf1d97bba10fd</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Reschedule.healthcare_staff</sys_name>
+        <sys_package display_value="Healthcare Management " source="eb49735f471222104bebe454116d43bf">eb49735f471222104bebe454116d43bf</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_scope_delete display_value="">777693b6033f4472835f22a0c4fb6961</sys_scope_delete>
+        <sys_update_name>sys_ui_action_role_e1e5412993b62210e8bcf1d97bba10fd</sys_update_name>
+        <sys_update_version display_value="sys_ui_action_role_e1e5412993b62210e8bcf1d97bba10fd">bc46856993b62210e8bcf1d97bba102b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-17 18:06:10</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

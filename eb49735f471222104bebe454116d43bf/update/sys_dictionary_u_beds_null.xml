@@ -56,7 +56,7 @@
         <sys_package display_value="Healthcare Management " source="eb49735f471222104bebe454116d43bf">eb49735f471222104bebe454116d43bf</sys_package>
         <sys_policy/>
         <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
-        <sys_update_name>sys_dictionary_u_beds_null</sys_update_name>
+        <sys_update_name>sys_dictionary_u_beds_NULL</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-07-08 10:50:11</sys_updated_on>
         <table_reference>false</table_reference>
@@ -74,7 +74,7 @@
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</claim_owner_scope>
         <claim_timestamp>197f0871c460000001</claim_timestamp>
-        <metadata_update_name>sys_dictionary_u_beds_null</metadata_update_name>
+        <metadata_update_name>sys_dictionary_u_beds_NULL</metadata_update_name>
         <previous_claim_app_version>1.0.0</previous_claim_app_version>
         <previous_claim_name>Healthcare Management </previous_claim_name>
         <previous_claim_scope>eb49735f471222104bebe454116d43bf</previous_claim_scope>

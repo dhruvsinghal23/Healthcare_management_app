@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_data_policy_rule">
+    <sys_data_policy_rule action="INSERT_OR_UPDATE">
+        <disabled>ignore</disabled>
+        <field>u_results</field>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_data_policy_rule</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-15 11:47:56</sys_created_on>
+        <sys_data_policy display_value="to ensure that the results field is mandatory when the status is set to &quot;Completed&quot; in the Lab Test form.">60e1473c93f62210e8bcf1d97bba10c3</sys_data_policy>
+        <sys_id>5d124b3c93f62210e8bcf1d97bba109c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_results</sys_name>
+        <sys_package display_value="Healthcare Management " source="eb49735f471222104bebe454116d43bf">eb49735f471222104bebe454116d43bf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_update_name>sys_data_policy_rule_5d124b3c93f62210e8bcf1d97bba109c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-15 11:47:56</sys_updated_on>
+        <table>u_lab_test</table>
+    </sys_data_policy_rule>
+</record_update>

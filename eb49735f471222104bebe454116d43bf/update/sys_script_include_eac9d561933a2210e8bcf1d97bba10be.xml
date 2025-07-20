@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>global.RefillMedicationUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>RefillMedicationUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var RefillMedicationUtils = Class.create();
+RefillMedicationUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    /**
+     * getRefillParams()
+     * Returns JSON string of default field values for the new refill form.
+     */
+    getRefillParams: function() {
+        var params = {};
+        // Copy existing record values passed from client
+        params.u_patient_id       = this.getParameter('sysparm_patient_id');
+        params.u_medication_name  = this.getParameter('sysparm_medication_name');
+        params.u_dosage           = this.getParameter('sysparm_dosage');
+        params.u_frequency        = this.getParameter('sysparm_frequency');
+
+        // Compute start date = now
+        var start = new GlideDateTime();
+        params.u_start_date = start.getValue();
+
+        // Compute end date = 7 days later
+        var end = new GlideDateTime();
+        end.addDaysLocalTime(7);
+        params.u_end_date = end.getValue();
+
+        return JSON.stringify(params);
+    },
+
+    type: 'RefillMedicationUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-17 12:06:17</sys_created_on>
+        <sys_id>eac9d561933a2210e8bcf1d97bba10be</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>RefillMedicationUtils</sys_name>
+        <sys_package display_value="Healthcare Management " source="eb49735f471222104bebe454116d43bf">eb49735f471222104bebe454116d43bf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_update_name>sys_script_include_eac9d561933a2210e8bcf1d97bba10be</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-17 12:28:54</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>eac9d561933a2210e8bcf1d97bba10be</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-17 12:06:16</sys_created_on>
+        <sys_id>cde9dd21933a2210e8bcf1d97bba10e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-17 12:06:16</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
