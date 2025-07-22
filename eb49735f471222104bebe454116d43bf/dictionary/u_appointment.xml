@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="8e6af7df471222104bebe454116d43b5" extends="task" label="Appointment" max_length="40" name="u_appointment" type="collection">
+    <element audit="true" db_object_id="317772c39372221019e5f6027cba108c" extends="task" label="Appointment" max_length="40" name="u_appointment" type="collection">
+        <element attributes="encode_utf8=false" label="Patient ID" mandatory="true" max_length="32" name="u_patient_id" reference="u_patient_record" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Department" mandatory="true" max_length="40" name="u_department" type="string">
+            <choice>
+                <element inactive_on_update="false" label="General Medicine" sequence="0" value="general medicine"/>
+                <element inactive_on_update="false" label="Pediatrics" sequence="2" value="pediatrics"/>
+                <element inactive_on_update="false" label="Cardiology" sequence="1" value="cardiology"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Appointment Date" mandatory="true" max_length="40" name="u_appointment_date" type="glide_date"/>
+        <element attributes="encode_utf8=false" label="Doctor" max_length="32" name="u_doctor" reference="u_doctor" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="u_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Scheduled" sequence="0" value="scheduled"/>
+                <element inactive_on_update="false" label="Completed" sequence="2" value="completed"/>
+                <element inactive_on_update="false" label="Confirmed" sequence="1" value="confirmed"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="3" value="cancelled"/>
+            </choice>
+        </element>
         <element attributes="edge_encryption_enabled=true" label="Gender" max_length="40" name="u_patient_gender" type="string"/>
-        <element label="Patient Age" max_length="40" name="u_patient_age" type="integer"/>
         <element attributes="edge_encryption_enabled=true" label="Patient Name" max_length="40" name="u_patient_name" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Patient Summary" max_length="1000" name="u_patient_summary" read_only="true" type="string"/>
+        <element label="Patient Age" max_length="40" name="u_patient_age" type="integer"/>
         <element label="VIP" max_length="40" name="u_vip" type="boolean"/>
     </element>
 </database>
