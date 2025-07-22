@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" db_object_id="05bb3f53475222104bebe454116d4326" extends="task" label="Insurance" max_length="40" name="u_insurance" type="collection">
-        <element attributes="omit_sys_original=true" label="Coverage Amount" mandatory="true" max_length="20" name="u_coverage_amount" type="currency"/>
-        <element attributes="edge_encryption_enabled=true" label="Start Date" mandatory="true" max_length="40" name="u_start_date" type="glide_date"/>
         <element attributes="edge_encryption_enabled=true" label="End Date" mandatory="true" max_length="40" name="u_end_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Start Date" mandatory="true" max_length="40" name="u_start_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true,omit_sys_original=true" label="Coverage Amount" mandatory="true" max_length="20" name="u_coverage_amount" type="currency"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="new" label="Status" mandatory="true" max_length="40" name="u_status" type="string">
             <choice>
                 <element inactive_on_update="false" label="Expired" sequence="2" value="expired"/>

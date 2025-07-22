@@ -18,10 +18,5 @@
                 <element inactive_on_update="false" label="Cancelled" sequence="3" value="cancelled"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" label="Gender" max_length="40" name="u_patient_gender" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Patient Name" max_length="40" name="u_patient_name" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Patient Summary" max_length="1000" name="u_patient_summary" read_only="true" type="string"/>
-        <element label="Patient Age" max_length="40" name="u_patient_age" type="integer"/>
-        <element label="VIP" max_length="40" name="u_vip" type="boolean"/>
     </element>
 </database>

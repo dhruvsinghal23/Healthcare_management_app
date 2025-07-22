@@ -2,7 +2,7 @@
     <sys_dictionary action="INSERT_OR_UPDATE" element="u_coverage_amount" table="u_insurance">
         <active>true</active>
         <array>false</array>
-        <attributes>omit_sys_original=true</attributes>
+        <attributes>edge_encryption_enabled=true,omit_sys_original=true</attributes>
         <audit>false</audit>
         <calculation/>
         <choice>0</choice>
