@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_email_action">
     <sysevent_email_action action="INSERT_OR_UPDATE">
-        <action_insert>true</action_insert>
-        <action_update>true</action_update>
+        <action_insert>false</action_insert>
+        <action_update>false</action_update>
         <active>true</active>
         <advanced_condition/>
         <affected_field_on_event/>
         <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
         <collection>u_appointment</collection>
-        <condition table="u_appointment">u_statusCHANGESTOscheduled^EQ<item display_value="Scheduled" endquery="false" field="u_status" goto="false" newquery="false" operator="CHANGESTO" or="false" value="scheduled"/>
-            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
-        </condition>
+        <condition/>
         <content_type>text/html</content_type>
         <default_interval/>
         <description/>
@@ -25,53 +23,64 @@
         <digest_text/>
         <digestable>false</digestable>
         <enable_dynamic_translation>false</enable_dynamic_translation>
-        <event_name>activate.life.cycle.migration</event_name>
+        <event_name>appoinment.tomorrow</event_name>
         <event_parm_1>false</event_parm_1>
         <event_parm_2>false</event_parm_2>
         <exclude_delegates>false</exclude_delegates>
         <force_delivery>false</force_delivery>
         <from/>
-        <generation_type>engine</generation_type>
+        <generation_type>event</generation_type>
         <importance/>
         <include_attachments>false</include_attachments>
         <item>event.parm1</item>
         <item_table/>
         <mandatory>false</mandatory>
         <message/>
-        <message_html/>
+        <message_html><![CDATA[<p>Your appointment is scheduled for tomorrow</p>]]></message_html>
         <message_list/>
         <message_text/>
-        <name>New Appointment Scheduled</name>
+        <name>Appointment Tomorrow</name>
         <omit_watermark>false</omit_watermark>
         <order>100</order>
         <push_message_only>false</push_message_only>
-        <recipient_fields>u_patient_id</recipient_fields>
+        <recipient_fields>u_patient_id.u_email</recipient_fields>
         <recipient_groups/>
-        <recipient_users>6816f79cc0a8016401c5a33be04be441,62826bf03710200044e0bfc8bcbe5df1</recipient_users>
+        <recipient_users>dhruvsinghal239@gmail.com</recipient_users>
         <reply_to/>
         <send_self>true</send_self>
         <sms_alternate/>
         <style/>
-        <subject/>
+        <subject>Appointment is scheduled for tomorrow</subject>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-07-09 14:47:31</sys_created_on>
+        <sys_created_on>2025-07-22 11:53:36</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>bd5138cb47aa22104bebe454116d43b1</sys_id>
-        <sys_mod_count>11</sys_mod_count>
-        <sys_name>New Appointment Scheduled</sys_name>
+        <sys_id>1e86438793b2221019e5f6027cba100a</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Appointment Tomorrow</sys_name>
         <sys_overrides/>
         <sys_package display_value="Healthcare Management " source="eb49735f471222104bebe454116d43bf">eb49735f471222104bebe454116d43bf</sys_package>
         <sys_policy/>
         <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
-        <sys_update_name>sysevent_email_action_bd5138cb47aa22104bebe454116d43b1</sys_update_name>
+        <sys_update_name>sysevent_email_action_1e86438793b2221019e5f6027cba100a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-22 15:10:13</sys_updated_on>
+        <sys_updated_on>2025-07-22 15:03:59</sys_updated_on>
         <sys_version>2</sys_version>
-        <template display_value="">180e1d3dc3b2ea1048da3d0ed4013123</template>
+        <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>
         <weight>0</weight>
     </sysevent_email_action>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>1e86438793b2221019e5f6027cba100a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-22 12:42:35</sys_created_on>
+        <sys_id>6922570793f2221019e5f6027cba10ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-22 12:42:35</sys_updated_on>
+        <table>sysevent_email_action</table>
+        <use_es_latest>false</use_es_latest>
+    </sys_es_latest_script>
 </record_update>

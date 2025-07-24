@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
     <sysevent_register action="INSERT_OR_UPDATE">
         <caller_access/>
-        <derived_priority>1000</derived_priority>
+        <derived_priority>100</derived_priority>
         <description/>
-        <event_name>Appointment.notification</event_name>
+        <event_name>appoinment.tomorrow</event_name>
         <fired_by/>
-        <priority>1000</priority>
+        <priority>100</priority>
         <queue/>
         <suffix/>
         <sys_class_name>sysevent_register</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-07-15 04:35:38</sys_created_on>
-        <sys_id>0a6f51b493322210e8bcf1d97bba104c</sys_id>
+        <sys_created_on>2025-07-22 11:51:02</sys_created_on>
+        <sys_id>c7368b4793b2221019e5f6027cba1028</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_name>Appointment.notification</sys_name>
+        <sys_name>appoinment.tomorrow</sys_name>
         <sys_package display_value="Healthcare Management " source="eb49735f471222104bebe454116d43bf">eb49735f471222104bebe454116d43bf</sys_package>
         <sys_policy/>
         <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
-        <sys_update_name>sysevent_register_0a6f51b493322210e8bcf1d97bba104c</sys_update_name>
+        <sys_update_name>sysevent_register_c7368b4793b2221019e5f6027cba1028</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-22 15:08:21</sys_updated_on>
+        <sys_updated_on>2025-07-22 11:51:35</sys_updated_on>
         <table>u_appointment</table>
     </sysevent_register>
 </record_update>
