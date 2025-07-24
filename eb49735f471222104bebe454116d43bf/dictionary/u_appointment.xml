@@ -3,22 +3,23 @@
         <element attributes="encode_utf8=false" label="Patient ID" mandatory="true" max_length="32" name="u_patient_id" reference="u_patient_record" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Department" mandatory="true" max_length="40" name="u_department" type="string">
             <choice>
-                <element inactive_on_update="false" label="General Medicine" sequence="0" value="general medicine"/>
                 <element inactive_on_update="false" label="Pediatrics" sequence="2" value="pediatrics"/>
+                <element inactive_on_update="false" label="General Medicine" sequence="0" value="general medicine"/>
                 <element inactive_on_update="false" label="Cardiology" sequence="1" value="cardiology"/>
             </choice>
         </element>
         <element label="Appointment Date" max_length="40" name="u_appointment_date" type="glide_date_time"/>
         <element label="Check In" max_length="40" name="u_check_in" type="boolean"/>
+        <element label="VIP" max_length="40" name="u_vip" type="boolean"/>
         <element attributes="encode_utf8=false" label="Doctor" max_length="32" name="u_doctor" reference="u_doctor" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" default="scheduled" label="Status" max_length="40" name="u_status" type="string">
             <choice>
-                <element inactive_on_update="false" label="No Show" sequence="5" value="no show"/>
-                <element inactive_on_update="false" label="In Progress" sequence="1" value="in progress"/>
-                <element inactive_on_update="false" label="Scheduled" sequence="0" value="scheduled"/>
-                <element inactive_on_update="false" label="Completed" sequence="3" value="completed"/>
                 <element inactive_on_update="false" label="Confirmed" sequence="2" value="confirmed"/>
+                <element inactive_on_update="false" label="Completed" sequence="3" value="completed"/>
+                <element inactive_on_update="false" label="Scheduled" sequence="0" value="scheduled"/>
                 <element inactive_on_update="false" label="Cancelled" sequence="4" value="cancelled"/>
+                <element inactive_on_update="false" label="In Progress" sequence="1" value="in progress"/>
+                <element inactive_on_update="false" label="No Show" sequence="5" value="no show"/>
             </choice>
         </element>
     </element>

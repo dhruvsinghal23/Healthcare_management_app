@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time>1970-01-01 00:00:00</entered_time>
+        <max_drift/>
+        <name>appointment is tomorrow</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2025-07-22 11:54:17</run_start>
+        <run_time>1970-01-01 00:00:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[(function sendReminders24HrBefore() {
+    var gr = new GlideRecord('u_appointment');
+    gr.addEncodedQuery("u_status=scheduled^u_appointment_dateONTomorrow@javascript:gs.beginningOfTomorrow()@javascript:gs.endOfTomorrow()");
+    gr.query();
+
+    while (gr.next()) {
+        var patient = gr.u_patient_id;
+        if (patient && patient.u_email) {
+            gs.eventQueue('appointment.tomorrow', gr, patient.sys_id, patient.u_email);
+        }
+    }
+})();]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-22 11:56:09</sys_created_on>
+        <sys_id>82174f4793b2221019e5f6027cba103b</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>appointment is tomorrow</sys_name>
+        <sys_package display_value="Healthcare Management " source="eb49735f471222104bebe454116d43bf">eb49735f471222104bebe454116d43bf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_update_name>sysauto_script_82174f4793b2221019e5f6027cba103b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-22 15:06:34</sys_updated_on>
+        <time_zone>floating</time_zone>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>82174f4793b2221019e5f6027cba103b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-22 11:56:09</sys_created_on>
+        <sys_id>55874f4793b2221019e5f6027cba103f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-22 11:56:09</sys_updated_on>
+        <table>sysauto_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

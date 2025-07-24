@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_data_policy_rule">
+    <sys_data_policy_rule action="DELETE">
+        <disabled>true</disabled>
+        <field>u_appointment_date</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_data_policy_rule</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-15 08:17:11</sys_created_on>
+        <sys_data_policy display_value="Restrict editing of the appointment date">0df1563493362210e8bcf1d97bba1034</sys_data_policy>
+        <sys_id>5d329a3493362210e8bcf1d97bba100b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_appointment_date</sys_name>
+        <sys_package display_value="Healthcare Management " source="eb49735f471222104bebe454116d43bf">eb49735f471222104bebe454116d43bf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_update_name>sys_data_policy_rule_5d329a3493362210e8bcf1d97bba100b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-15 08:17:11</sys_updated_on>
+        <table>u_appointment</table>
+    </sys_data_policy_rule>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</application>
+        <file_path/>
+        <instance_id>baf363623b58e250986d048aa4e45a47</instance_id>
+        <instance_name>dev301620</instance_name>
+        <name>sys_data_policy_rule_5d329a3493362210e8bcf1d97bba100b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_data_policy_rule">
+    <sys_data_policy_rule action="INSERT_OR_UPDATE">
+        <disabled>true</disabled>
+        <field>u_appointment_date</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_data_policy_rule</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-15 08:17:11</sys_created_on>
+        <sys_data_policy display_value="Restrict editing of the appointment date">0df1563493362210e8bcf1d97bba1034</sys_data_policy>
+        <sys_id>5d329a3493362210e8bcf1d97bba100b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_appointment_date</sys_name>
+        <sys_package display_value="Healthcare Management " source="eb49735f471222104bebe454116d43bf">eb49735f471222104bebe454116d43bf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_update_name>sys_data_policy_rule_5d329a3493362210e8bcf1d97bba100b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-15 08:17:11</sys_updated_on>
+        <table>u_appointment</table>
+    </sys_data_policy_rule>
+</record_update>]]></payload>
+        <payload_hash>-733939912</payload_hash>
+        <record_name>u_appointment_date</record_name>
+        <reverted_from/>
+        <source>920476879332221019e5f6027cba108f</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-22 10:31:23</sys_created_on>
+        <sys_id>3b14be879332221019e5f6027cba103f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19831b0239a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-22 10:31:23</sys_updated_on>
+        <type>Data Policy Rule</type>
+        <update_guid>f714be876032221058a37908bc873e3f</update_guid>
+        <update_guid_history>f714be876032221058a37908bc873e3f:-733939912</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-22 10:45:48</sys_created_on>
+        <sys_db_object display_value="" name="sys_data_policy_rule">sys_data_policy_rule</sys_db_object>
+        <sys_id>1ee615d259bf470e8b5d813855f948a4</sys_id>
+        <sys_metadata>5d329a3493362210e8bcf1d97bba100b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_appointment_date</sys_name>
+        <sys_package display_value="Healthcare Management " source="eb49735f471222104bebe454116d43bf">eb49735f471222104bebe454116d43bf</sys_package>
+        <sys_parent display_value="">0df1563493362210e8bcf1d97bba1034</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_scope_delete display_value="">777693b6033f4472835f22a0c4fb6961</sys_scope_delete>
+        <sys_update_name>sys_data_policy_rule_5d329a3493362210e8bcf1d97bba100b</sys_update_name>
+        <sys_update_version display_value="sys_data_policy_rule_5d329a3493362210e8bcf1d97bba100b">3b14be879332221019e5f6027cba103f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-22 10:45:48</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

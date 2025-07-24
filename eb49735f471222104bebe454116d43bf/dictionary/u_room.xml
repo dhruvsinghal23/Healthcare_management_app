@@ -5,10 +5,10 @@
         <element attributes="edge_encryption_enabled=true" label="Last Cleaned Date" mandatory="true" max_length="40" name="u_last_cleaned_data" type="glide_date"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="new" label="Status" max_length="40" name="u_status" type="string">
             <choice>
-                <element inactive_on_update="false" label="Under Maintenance" sequence="3" value="under maintenance"/>
                 <element inactive_on_update="false" label="Available" sequence="1" value="available"/>
-                <element inactive_on_update="false" label="Occupied" sequence="2" value="occupied"/>
+                <element inactive_on_update="false" label="Under Maintenance" sequence="3" value="under maintenance"/>
                 <element inactive_on_update="false" label="New" sequence="0" value="new"/>
+                <element inactive_on_update="false" label="Occupied" sequence="2" value="occupied"/>
             </choice>
         </element>
         <index name="index">

@@ -5,16 +5,16 @@
         <element attributes="edge_encryption_enabled=true,omit_sys_original=true" label="Coverage Amount" mandatory="true" max_length="20" name="u_coverage_amount" type="currency"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="new" label="Status" mandatory="true" max_length="40" name="u_status" type="string">
             <choice>
+                <element inactive_on_update="false" label="Active" sequence="1" value="active"/>
                 <element inactive_on_update="false" label="Expired" sequence="2" value="expired"/>
                 <element inactive_on_update="false" label="New" sequence="0" value="new"/>
-                <element inactive_on_update="false" label="Active" sequence="1" value="active"/>
             </choice>
         </element>
         <element attributes="edge_encryption_enabled=true" choice="3" default="true" label="Active" max_length="40" name="u_active" type="string">
             <choice>
+                <element inactive_on_update="false" label="True" sequence="0" value="true"/>
                 <element inactive_on_update="false" label="False" sequence="1" value="false"/>
                 <element inactive_on_update="false" label="Choice 3" sequence="2" value="Choice 3"/>
-                <element inactive_on_update="false" label="True" sequence="0" value="true"/>
             </choice>
         </element>
     </element>
