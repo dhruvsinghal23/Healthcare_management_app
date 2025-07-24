@@ -8,5 +8,6 @@
                 <element inactive_on_update="false" label="Prescribed" sequence="1" value="prescribed"/>
             </choice>
         </element>
+        <element label="Reminder" max_length="40" name="u_reminder" type="boolean"/>
     </element>
 </database>
