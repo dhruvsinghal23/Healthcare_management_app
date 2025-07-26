@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>global.BillingUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>BillingUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var BillingUtils = Class.create();
+BillingUtils.prototype = {
+    initialize: function() {},
+
+    calculateTotalBilling: function(patientSysId) {
+        var total = 0;
+        var gr = new GlideRecord('u_billing');
+        gr.addQuery('u_patient_id', patientSysId);
+        gr.query();
+        while (gr.next()) {
+            var amount = parseFloat(gr.u_total_amount);
+            total = amount;
+        }
+        return total;
+    },
+
+    isOverdue: function(billingSysId) {
+        var gr = new GlideRecord('u_billing');
+        if (gr.get(billingSysId)) {
+            var dueDate = gr.u_due_date;
+            var paid = gr.u_status == 'Paid';
+            return dueDate && dueDate < new GlideDate() && !paid;
+        }
+        return false;
+    },
+
+    fetchById: function(billingSysId) {
+        var gr = new GlideRecord('u_billing');
+        if (gr.get(billingSysId)) {
+            return {
+                sys_id: gr.getUniqueValue(),
+                patient: gr.u_patient_id.getDisplayValue(),
+                amount: gr.u_total_amount + '',
+                status: gr.u_status + ''
+            };
+        }
+        return null;
+    },
+
+    fetchByPatient: function(patientSysId) {
+        var result = [];
+        var gr = new GlideRecord('u_billing');
+        gr.addQuery('u_patient_id', patientSysId);
+        gr.query();
+        while (gr.next()) {
+            result.push({
+                sys_id: gr.getUniqueValue(),
+                amount: gr.u_total_amount + '',
+                status: gr.u_payment_status + '',
+                billing_date: gr.u_billing_date ? gr.u_billing_date.getDisplayValue() : '',
+                due_date: gr.u_due_date ? gr.u_due_date.getDisplayValue() : ''
+            });
+        }
+        return result;
+    },
+
+    type: 'BillingUtils'
+};
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 18:37:49</sys_created_on>
+        <sys_id>cc2dd0ba47ae22104bebe454116d4334</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>BillingUtils</sys_name>
+        <sys_package display_value="Healthcare Management " source="eb49735f471222104bebe454116d43bf">eb49735f471222104bebe454116d43bf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_update_name>sys_script_include_cc2dd0ba47ae22104bebe454116d4334</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-26 16:31:16</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="DELETE">
+        <id>cc2dd0ba47ae22104bebe454116d4334</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-08 18:37:48</sys_created_on>
+        <sys_id>2c3d90ba47ae22104bebe454116d43ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-08 18:37:48</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</application>
+        <file_path/>
+        <instance_id>baf363623b58e250986d048aa4e45a47</instance_id>
+        <instance_name>dev301620</instance_name>
+        <name>sys_script_include_cc2dd0ba47ae22104bebe454116d4334</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.BillingUtils&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;BillingUtils&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var BillingUtils = Class.create();
+BillingUtils.prototype = {
+    initialize: function() {},
+
+    calculateTotalBilling: function(patientSysId) {
+        var total = 0;
+        var gr = new GlideRecord('u_billing');
+        gr.addQuery('u_patient_id', patientSysId);
+        gr.query();
+        while (gr.next()) {
+            var amount = parseFloat(gr.u_total_amount);
+            total = amount;
+        }
+        return total;
+    },
+
+    isOverdue: function(billingSysId) {
+        var gr = new GlideRecord('u_billing');
+        if (gr.get(billingSysId)) {
+            var dueDate = gr.u_due_date;
+            var paid = gr.u_status == 'Paid';
+            return dueDate &amp;&amp; dueDate &lt; new GlideDate() &amp;&amp; !paid;
+        }
+        return false;
+    },
+
+    fetchById: function(billingSysId) {
+        var gr = new GlideRecord('u_billing');
+        if (gr.get(billingSysId)) {
+            return {
+                sys_id: gr.getUniqueValue(),
+                patient: gr.u_patient_id.getDisplayValue(),
+                amount: gr.u_total_amount + '',
+                status: gr.u_status + ''
+            };
+        }
+        return null;
+    },
+
+    fetchByPatient: function(patientSysId) {
+        var result = [];
+        var gr = new GlideRecord('u_billing');
+        gr.addQuery('u_patient_id', patientSysId);
+        gr.query();
+        while (gr.next()) {
+            result.push({
+                sys_id: gr.getUniqueValue(),
+                amount: gr.u_total_amount + '',
+                status: gr.u_payment_status + '',
+                billing_date: gr.u_billing_date ? gr.u_billing_date.getDisplayValue() : '',
+                due_date: gr.u_due_date ? gr.u_due_date.getDisplayValue() : ''
+            });
+        }
+        return result;
+    },
+
+    type: 'BillingUtils'
+};
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-08 18:37:49&lt;/sys_created_on&gt;&lt;sys_id&gt;cc2dd0ba47ae22104bebe454116d4334&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;BillingUtils&lt;/sys_name&gt;&lt;sys_package display_value="Healthcare Management " source="eb49735f471222104bebe454116d43bf"&gt;eb49735f471222104bebe454116d43bf&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Healthcare Management "&gt;eb49735f471222104bebe454116d43bf&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_cc2dd0ba47ae22104bebe454116d4334&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-26 16:31:16&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;cc2dd0ba47ae22104bebe454116d4334&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-08 18:37:48&lt;/sys_created_on&gt;&lt;sys_id&gt;2c3d90ba47ae22104bebe454116d43ba&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-08 18:37:48&lt;/sys_updated_on&gt;&lt;table&gt;sys_script_include&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1457633113</payload_hash>
+        <record_name>BillingUtils</record_name>
+        <reverted_from/>
+        <source>e4cd107f93f2221019e5f6027cba103f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-26 16:31:16</sys_created_on>
+        <sys_id>2adce46c9343221019e5f6027cba1088</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19847930fc60000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-26 16:31:16</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>aedce46c4b43221062452c3f012d3087</update_guid>
+        <update_guid_history>aedce46c4b43221062452c3f012d3087:1457633113,4ebc60ec4d432210271ebcf4793531c2:-1131334603,b78cec6cb34322100ba8ca82504eb065:-1097207919,5d3c642c36432210153d168462b1c093:812054793,3824fe8743322210ecfd2cc0a08fbb9b:188695141,3824fe8743322210ecfd2cc0a08fbb9b:188695141</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-26 16:37:47</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>2bb998f055b2401e96e712615dcf2079</sys_id>
+        <sys_metadata>cc2dd0ba47ae22104bebe454116d4334</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>BillingUtils</sys_name>
+        <sys_package display_value="Healthcare Management " source="eb49735f471222104bebe454116d43bf">eb49735f471222104bebe454116d43bf</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_scope_delete display_value="">777693b6033f4472835f22a0c4fb6961</sys_scope_delete>
+        <sys_update_name>sys_script_include_cc2dd0ba47ae22104bebe454116d4334</sys_update_name>
+        <sys_update_version display_value="sys_script_include_cc2dd0ba47ae22104bebe454116d4334">2adce46c9343221019e5f6027cba1088</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-26 16:37:47</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
