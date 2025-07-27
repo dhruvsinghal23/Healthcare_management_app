@@ -8,6 +8,13 @@
                 <element inactive_on_update="false" label="Prescribed" sequence="1" value="prescribed"/>
             </choice>
         </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="u_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="New" sequence="0" value="new"/>
+                <element inactive_on_update="false" label="Not Completed" sequence="2" value="not completed"/>
+                <element inactive_on_update="false" label="Completed" sequence="1" value="completed"/>
+            </choice>
+        </element>
         <element label="Reminder" max_length="40" name="u_reminder" type="boolean"/>
     </element>
 </database>
