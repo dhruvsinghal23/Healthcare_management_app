@@ -1,0 +1,1202 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=495000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>insurance_policy_update_sla</internal_name>
+        <label_cache>[{"name":"5ad15fd0-a024-4ab1-8b1d-b48d61c63415.Record","label":"10 - Look Up Record➛Insurance Record","reference":"u_insurance","reference_display":"Insurance","type":"reference","base_type":"reference","usedInstances":{"8bf317f6-0731-46fc-8a17-34fd83348ff4":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"SLA Task_1.task_sla_record","label":"Trigger - SLA Task➛Task SLA Record","reference":"task_sla","reference_display":"Task SLA","type":"reference","base_type":"reference","usedInstances":{"1f2882a7-e616-4da3-89ef-3b6214364ec3":["record"]},"attributes":{}},{"name":"f88ecefa-258a-4a29-9674-07b55a3b02da.Record","label":"7 - Look Up Record➛Insurance Record","reference":"u_insurance","reference_display":"Insurance","type":"reference","base_type":"reference","usedInstances":{"7f9dc8e9-7b27-4190-904e-4354b31e2626":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"29ea39a6-6954-4854-b9b3-8d2fd695cd9b.Record","label":"3 - Look Up Record➛Insurance Record","reference":"u_insurance","reference_display":"Insurance","type":"reference","base_type":"reference","usedInstances":{"f43e9624-5660-4ef4-ae34-5a591b51338f":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"SLA Task_1.task_sla_record.sys_id","label":"Trigger - SLA Task➛Task SLA Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"task_sla","column_name":"sys_id","usedInstances":{"29ea39a6-6954-4854-b9b3-8d2fd695cd9b":["conditions"],"f88ecefa-258a-4a29-9674-07b55a3b02da":["conditions"],"5ad15fd0-a024-4ab1-8b1d-b48d61c63415":["conditions"]}},{"name":"4c3e2a6b-594b-46a3-bcd6-1c011bf35f69.status","label":"1 - SLA Percentage Timer➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Paused","value":"paused","order":0.0},{"label":"Completed","value":"completed","order":1.0},{"label":"Repair","value":"repair","order":2.0},{"label":"Skipped","value":"skipped","order":3.0},{"label":"Cancelled","value":"cancelled","order":4.0}],"usedInstances":{"022d181a-a91c-4941-887f-b170b8f69f6f":["condition"],"cc2f93f1-7ef2-4bf1-8396-295ffc9d4fdb":["condition"]},"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice"}}]</label_cache>
+        <master_snapshot>1b2dbd3c930b621019e5f6027cba10b6</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Insurance Policy Update SLA</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>eb2dfd3c930b621019e5f6027cba100d</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-27 16:52:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6e4b39b8930b621019e5f6027cba10b0</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Insurance Policy Update SLA</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Healthcare Management " source="eb49735f471222104bebe454116d43bf">eb49735f471222104bebe454116d43bf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_update_name>sys_hub_flow_6e4b39b8930b621019e5f6027cba10b0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-27 17:00:43</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=6e4b39b8930b621019e5f6027cba10b0"/>
+    <sys_variable_value action="delete_multiple" query="document_key=6e4b39b8930b621019e5f6027cba10b0"/>
+    <sys_flow_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <name>sla_task</name>
+        <sys_class_name>sys_flow_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-27 17:00:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>eb2dfd3c930b621019e5f6027cba100d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-27 17:00:43</sys_updated_on>
+    </sys_flow_trigger>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=6e4b39b8930b621019e5f6027cba10b0"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=6e4b39b8930b621019e5f6027cba10b0"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=6e4b39b8930b621019e5f6027cba10b0^sys_idNOT IN6a4b39b8930b621019e5f6027cba10b1"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>6e4b39b8930b621019e5f6027cba10b0</id>
+        <name>Insurance Policy Update SLA</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-27 16:52:27</sys_created_on>
+        <sys_id>6a4b39b8930b621019e5f6027cba10b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-27 16:52:27</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=6a4b39b8930b621019e5f6027cba10b1"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=6e4b39b8930b621019e5f6027cba10b0^sys_idNOT IN462d7d3c930b621019e5f6027cba10a6,4e2dbdb8930b621019e5f6027cba1026"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD832dbd3cfc0b6210083c1b78ef392b5f</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>eb49735f471222104bebe454116d43bf</scope_name>
+        <serialized_content>{"FlowDesigner:FD832dbd3cfc0b6210083c1b78ef392b5f":{"duration":"String","duration.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"duration\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"32\"}"},"relative_duration_works_on":"String","relative_duration_works_on.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"relative_duration_works_on\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"32\"}"},"is_repair":"Boolean","is_repair.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"True/False\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"boolean\",\"choiceOption\":\"\",\"default_value\":\"false\",\"label\":\"is_repair\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"32\"}"},"duration_type":"String","duration_type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"duration_type\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"32\"}"},"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"32\"}"}},"FlowDesigner:FD832dbd3cfc0b6210083c1b78ef392b5f.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD832dbd3cfc0b6210083c1b78ef392b5f\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"sla_flow_inputs\",\"mandatory\":\"false\",\"order\":\"100\",\"max_length\":\"4096\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-27 17:00:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>472dbd3c930b621019e5f6027cba105f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-27 17:00:41</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD832dbd3cfc0b6210083c1b78ef392b5f,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sla_flow_inputs</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>sla_flow_inputs</label>
+        <mandatory>false</mandatory>
+        <max_length>4096</max_length>
+        <model display_value="Insurance Policy Update SLA">6e4b39b8930b621019e5f6027cba10b0</model>
+        <model_id>6e4b39b8930b621019e5f6027cba10b0</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_6e4b39b8930b621019e5f6027cba10b0</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-27 17:00:37</sys_created_on>
+        <sys_id>462d7d3c930b621019e5f6027cba10a6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-27 17:00:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=462d7d3c930b621019e5f6027cba10a6"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>task_sla_record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>task_sla_record</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Insurance Policy Update SLA">6e4b39b8930b621019e5f6027cba10b0</model>
+        <model_id>6e4b39b8930b621019e5f6027cba10b0</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_6e4b39b8930b621019e5f6027cba10b0</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="task_sla">task_sla</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-27 17:00:37</sys_created_on>
+        <sys_id>4e2dbdb8930b621019e5f6027cba1026</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-27 17:00:37</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4e2dbdb8930b621019e5f6027cba1026"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=6e4b39b8930b621019e5f6027cba10b0"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6e4b39b8930b621019e5f6027cba10b0"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=6e4b39b8930b621019e5f6027cba10b0^sys_idNOT IN0e2d7d3c930b621019e5f6027cba10bd"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Insurance Policy Update SLA">6e4b39b8930b621019e5f6027cba10b0</flow>
+        <name>SLA Task</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-27 17:00:37</sys_created_on>
+        <sys_id>0e2d7d3c930b621019e5f6027cba10bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-27 17:00:37</sys_updated_on>
+        <trigger_definition display_value="SLA Task">f5ce00a873723300d70877186bf6a759</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/4uOBQApu0wNAgAAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>sla_task</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=6e4b39b8930b621019e5f6027cba10b0^sys_idNOT IN022d7d3c930b621019e5f6027cba10c3,462d7d3c930b621019e5f6027cba10c6,4e2d7d3c930b621019e5f6027cba10c5,862d7d3c930b621019e5f6027cba10c7,862d7d3c930b621019e5f6027cba10c8,8e2d7d3c930b621019e5f6027cba10c7,c22d7d3c930b621019e5f6027cba10c4,c62d7d3c930b621019e5f6027cba10bf,ca2d7d3c930b621019e5f6027cba10c4"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Insurance Policy Update SLA">6e4b39b8930b621019e5f6027cba10b0</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>022d181a-a91c-4941-887f-b170b8f69f6f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-27 17:00:37</sys_created_on>
+        <sys_id>022d7d3c930b621019e5f6027cba10c3</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-27 17:02:22</sys_updated_on>
+        <ui_id>29ea39a6-6954-4854-b9b3-8d2fd695cd9b</ui_id>
+        <values>H4sIAAAAAAAA/+VYTW/bOBD9K4LOjlfyt3MrEhgIkG2AxttLtyAokYqJ0qRKUkkTw/99hyJlC7ZiW1sHSNCTweGQfDPz3pDyt1XISHgZkmk0zabT4WQcRf1+FI1G/RTHSdIfpUmU4EHYCQVeUvA0OOEUho+YF3ZcICZ0obBIrZUwnXP8/NVP3tSm0gXjRFERXn773glzrGA/Q1V4udqZOhUQxwnl4Dr3iHYAmud8M0TlnLPd1pcFn92EVMRCiToh/WWoIBQwZJhr2gmXWBBspHreWBTF5E7wrWHBhIEdQ+v8S7MXOHcSWb+MQlQpdXObIfJZcubsGht8b1SRmkJ513QhWUq1ywehGS64uarbnMNdbpgUbokL262WvFiKzy4d4WaDqihgKTSAoLkN1CL3YWT3C/n0pUI5Y6LMiZ/kMsV8M8LGKJYUxuJZhZTTJWyEljjPmXhAuZKPrFwMWJbdBw6DbsblExyq2YPo4tQC70JecXcG9uvS/BUrZqP4G7aBxQCIcWAIciXUslBlKh9RygtdTgC3tNsrXHdC/ayvONZ6GzmkHP0sLG6XBx8xckmzS1LFcvMJtnikPrh1p9LE8CAFp1vKpVIQZlHomjAADWLk3wIWk9Xq/vZTMMf6B4q7xv5ojpGiKfCu6xzX6335/J8tWsrseIyVzK7qQTYF7gW3Z7tt2sALLj6b4AZR9JEkB4e/P8W115BLwREhxeQgyciWT1oqg1wua0raF0Zrnp8AoeL5nWVmkDy/hsrTPGOUk6Z7ZWYndu6V3p95r7xLkgMgglz1mOBMlI8EAPpW7B8epF4S7/CspFftFrE2rNN9DeDAyOCltRJOgFMp4R7ODuYOTwPEqt+XlNnt9ZXRC6B/NgH0e+cRwGoT5iaRDTmv3oW2mpX/i/XHu/5AwdqCeN0ksFZnxm3P7K33BdxvpeA62dzM9SucO/MD8hVFdt6yBSxgqT8POf2iJ0YeqNmeXnkRaZ4w/9E07xmHqkKV4b3BYzQ++D2U1B6jLENLqBzL4c3snocaYUVRJgtBkH8t177foJIZU9p45/1G84WCfkQgQZiBWdCg9A423i0v4uNxVKm8yYIqEH+aDiCQoAwk2ATSLuw2TWtwxsfpuZvWDDNeVgM+hPJaOalSUr3SuI4U8gAjTuxqJ4KKzwrq99tekwQa298RrB/iq/r8rSmlOBn08Gjcj+MoiiMyjibjcTwZJdkIjwfZVqMIaZFCN4WdM6AKbI8qalR1jvb7j2upbRvNCagqCl5LYb+xe2MTWFhQ36CCdRy4byiJlJxisdNR5nBP/DXz+D1fh++uq3yI/5gKNt/NtDM15vqt3g0F+0ewnwW9sRSb0Kg3iUl6MRnH44tBRkYXU4KHF3iaDMd9QtNBds6nwPf/AGW9xNytFQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Insurance Policy Update SLA">6e4b39b8930b621019e5f6027cba10b0</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>cc2f93f1-7ef2-4bf1-8396-295ffc9d4fdb</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-27 17:00:37</sys_created_on>
+        <sys_id>462d7d3c930b621019e5f6027cba10c6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-27 17:02:22</sys_updated_on>
+        <ui_id>7f9dc8e9-7b27-4190-904e-4354b31e2626</ui_id>
+        <values>H4sIAAAAAAAA/+2XXW/bNhSG/wohYHeOJ3/IH7laFyNYgLQF4qC7KAqBIimLGyVqJJXUDfLfdyhRH7Yz1248LMFyqUMe8j3k+xzanx88Tr1zb0xn/iSKx3jqj4Yj358N5/NoNI/92XTuDwj1el6GUwYzFSNS2e87LAobeHiIZzNGWIzPhsEMn43xcH42n0zHZ/40CgI8ivwhxf2bMu/xETIp17nA609uAYiQhAuqWOadf/7S83KsYC/DlHf+sDV0qFiBIyZg6i1WK2bQTS16uwizzu03laRIWWZCXgev3QILN4KuFjACSVaV3/PYV8MyykBOjIVmPS/FGcVGqnUTUQzTj5loAwnPDCz5TmtJODZMI5MwxFLMBbrnJkEYVcL6nl3vq+bfQNxoaJeKGZwBsVp5RjgFRV4nHLojheGrdjheYIOXRhXEFKo5ackJ09VpUri0QpiLbqya8DE3XGZVisGRqLOlKNLsQ3WIXrNA5yYLDWJYbs/GFgubQ+HxMpH3N7XYS56Vp+hORUiCRfMVLxlWJLnkTNirzoo0grk9DxujeFQYKxNMIWBWu09YSrV7wUwmWHmVKc5znq3CXMk7Xm4I8tP+SsBHPxbyHvI1X2V9TGytfbg93L+E+KIMf8KK28LfwzKQ/Njz9FpfCKx1Wz6cf/hXYdVXh7Epx2aHpeFsMlE8N+9gqzvmin3sOfgG831+puPWt501WwCLkGe6UNjaYweuq87QcZQdoKqlzDrkaZWOsJ3YdTcXfagGHF+DI/mqXObwugWmTIV9RRMyTl6D1MzfROofUHoZCDVgHMzQJiv/Dg9gEh1Wpna1lZv/ACffo8OfTKJoEgXTUevDOYnpNIoneEpGre/uoaeqFKs/w7KndhAZ7ILhusVxTBygpWYC+rAoKEO/16L26XSQRFJCY8u2CQGlP1+Wp9sQMnzWC1RZExmJ4DLFGt6dRpINtq+SSbBBXCMNt9VHtxJxV1Uno4fWskBpoQ1MMzCyAd/GUzZ+udw5O7jo4kmvvAowTw9gsP8hwK2xcRIa2cGOJqq401BbgkUQzH5ZWVP1obhdHPdNPY7RA+Q275bc1e5Q1HBT2WqLxGUddBSO9lNYPUs7EHaeIf/lAvFa/G6FC57y0hAVqadHgO71FPM3bERIB4ET/N05YPPa0BcXu0qOMfT4x56VN0e/OkcP9v6HZpMNH0WntvQBu9eW/nXL09HRpg7eTP0/MXWw31Zkw0i6iP5gxHSMPQ1+QoanDK1k9sRf6e3hI3+WfF9bbfllo+wptcdYf/L2A+U/d/7pbY73WikebvZLSdenbd4HbN8072rzHTXOw4lJxZaDf7t9f936d/rM1j0JgtHkzcHP7t35PR1SJfPc1Xbi/v3lb9mDXxWHGAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Insurance Policy Update SLA">6e4b39b8930b621019e5f6027cba10b0</flow>
+        <generation_source/>
+        <order>7</order>
+        <parent_ui_id>cc2f93f1-7ef2-4bf1-8396-295ffc9d4fdb</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-27 17:00:37</sys_created_on>
+        <sys_id>4e2d7d3c930b621019e5f6027cba10c5</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-27 17:02:22</sys_updated_on>
+        <ui_id>f88ecefa-258a-4a29-9674-07b55a3b02da</ui_id>
+        <values>H4sIAAAAAAAA/+VYTW/bOBD9K4LOjlfyt3MrEhgIkG2AxttLtyAokYqJ0qRKUkkTw/99hyJlC7ZiW1sHSNCTweGQfDPz3pDyt1XISHgZkmk0zabT4WQcRf1+FI1G/RTHSdIfpUmU4EHYCQVeUvA0OOEUho+YF3ZcICZ0obBIrZUwnXP8/NVP3tSm0gXjRFERXn773glzrGA/Q1V4udqZOhUQxwnl4Dr3iHYAmud8M0TlnLPd1pcFn92EVMRCiToh/WWoIBQwZJhr2gmXWBBspHreWBTF5E7wrWHBhIEdQ+v8S7MXOHcSWb+MQlQpdXObIfJZcubsGht8b1SRmkJ513QhWUq1ywehGS64uarbnMNdbpgUbokL262WvFiKzy4d4WaDqihgKTSAoLkN1CL3YWT3C/n0pUI5Y6LMiZ/kMsV8M8LGKJYUxuJZhZTTJWyEljjPmXhAuZKPrFwMWJbdBw6DbsblExyq2YPo4tQC70JecXcG9uvS/BUrZqP4G7aBxQCIcWAIciXUslBlKh9RygtdTgC3tNsrXHdC/ayvONZ6GzmkHP0sLG6XBx8xckmzS1LFcvMJtnikPrh1p9LE8CAFp1vKpVIQZlHomjAADWLk3wIWk9Xq/vZTMMf6B4q7xv5ojpGiKfCu6xzX6335/J8tWsrseIyVzK7qQTYF7gW3Z7tt2sALLj6b4AZR9JEkB4e/P8W115BLwREhxeQgyciWT1oqg1wua0raF0Zrnp8AoeL5nWVmkDy/hsrTPGOUk6Z7ZWYndu6V3p95r7xLkgMgglz1mOBMlI8EAPpW7B8epF4S7/CspFftFrE2rNN9DeDAyOCltRJOgFMp4R7ODuYOTwPEqt+XlNnt9ZXRC6B/NgH0e+cRwGoT5iaRDTmv3oW2mpX/i/XHu/5AwdqCeN0ksFZnxm3P7K33BdxvpeA62dzM9SucO/MD8hVFdt6yBSxgqT8POf2iJ0YeqNmeXnkRaZ4w/9E07xmHqkKV4b3BYzQ++D2U1B6jLENLqBzL4c3snocaYUVRJgtBkH8t177foJIZU9p45/1G84WCfkQgQZiBWdCg9A423i0v4uNxVKm8yYIqEH+aDiCQoAwk2ATSLuw2TWtwxsfpuZvWDDNeVgM+hPJaOalSUr3SuI4U8gAjTuxqJ4KKzwrq99tekwQa298RrB/iq/r8rSmlOBn08Gjcj+MoiiMyjibjcTwZJdkIjwfZVqMIaZFCN4WdM6AKbI8qalR1jvb7j2upbRvNCagqCl5LYb+xe2MTWFhQ36CCdRy4byiJlJxisdNR5nBP/DXz+D1fh++uq3yI/5gKNt/NtDM15vqt3g0F+0ewnwW9sRSb0Kg3iUl6MRnH44tBRkYXU4KHF3iaDMd9QtNBds6nwPf/AGW9xNytFQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Wait For Condition">89ce8a4187120010663ca1bb36cb0be3</action_type>
+        <action_type_parent display_value="Wait For Condition">8bb9a8160b10030085c083eb37673aec</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>89ce8a4187120010663ca1bb36cb0be3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Insurance Policy Update SLA">6e4b39b8930b621019e5f6027cba10b0</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-27 17:00:37</sys_created_on>
+        <sys_id>862d7d3c930b621019e5f6027cba10c7</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-27 17:02:22</sys_updated_on>
+        <ui_id>1f2882a7-e616-4da3-89ef-3b6214364ec3</ui_id>
+        <values>H4sIAAAAAAAA/+2X227bOBCGXyXQtekVJUqmchfYDhrA2wC2273oFgJFkTGxtOTqkNZr5N2XlChLPjbZOgEC9Mrg8KB/fs7nkb5sLBFb1xYKKMMEQTyAjm1D2/ddSmAUuT6N7Ighq2clZMnUyozRNIvV+JHIUgc2m9nk5mpO8n9C2C/0Ty5JWC97elILY5GvJFl/NutVhC6EjDOWWNdfvvasFcnU0QXLrOvN3tRztUkSMamWThtx+2KL9UqP45SWS5YUoWiCE7NzZGau7kZqRm3ScmDPYj8KlsRM6eBE5qxnLUkSkyLN1tZ1kZUqkDES3ydyvV2xEElR57kkP3Lxr3qw6+h1nKnEqPFgOwyNP3WYj0hBZupkWpTZ1q5UUJbXlsSMk1IWw26sXnC/KkSa1FsKEslmdyrLZfKxNsTaHtC5jjJXIthK56mV12nx2SL9Pm1E3oqkcsSkKFNK5HZEiiITUVloORurFPNjZtfh43ZzIdX1h5XoME/LrDJpOh7eT0fhXzfz4YfxNJyOZ/Pp3XA+1juYZNXRS7JaieQhXGXpo6gUqnyX/QepBn0u0+8qsVw8JH1CtTl9dXWkf6vioyr8mWRCP/RPdYzarFV+SsS3kt1Vhcc5dKHvAwhtFyAY+SDAzAM28wjyHOR7vmM99ax8nQ8lyfPWY3W54bdSW1Q7brwNq+up06wqVG+mmVgVN0reIzOOPvUaKr2zlU/aQu+c2ZLZwHjIoKb1SmH7chZ/rqhhcV6V4HGFBseD2KS79+pjPWFgdM7DaCItjXUZH4ER2+8IRpPWr9O44/UujDtuizysS9KIrk59K+IciAOMIhe4EfIACjgH2MYIIEZs6jnxAEH6P4j7KWfnOwxvq5imSSx0XnmHswXJw0gVHl2w+O/Stt1Y194hdSfXXbQf8g6Dw67cYykYEA9ik2MHGBDdS3VFZNvvCcVL9cUds3dJ3LH7TYhjMfYjz8aAcYwBcgcYBNBxgO+TGEJEY26/bo+z43PVzDtvnoVYsrQsQi7JQ4c++xC05j/rZVw9Q0nD1Tip/jKNopMSDV1RmkpGkv0ep8rpj1uj1KCFXtjjzrH1jsi6WJNrnd7rcF2v34QrSglWLYuAwKUMID+iAHPKgcsij7tehKOB/QqdjJ6v4eCwVOMyI9UttkRd4JvtGToalkatgNPSDEnV3ezHJ4cHGZy83zj9Ek4Hdu99xLUTr8XUQu0bkXWuq6J+V9qjjEEy8CL9XUYAcgIISIAcEPhswBDHvkuCV6AMw7PVzQ9LOdfvfKVkl6XsGToaymatgNPSDGVtoe8CNu3EDWH+xQjDBy+DdJl0xR3jrZPVu+SOzxjJ6OJWMKnv03ydnaCxey27IHYv5m26m+NAN2YUwFi9OiLHdwB20QAMAhzZSJVe5LILcvf1P3oj1denFAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Insurance Policy Update SLA">6e4b39b8930b621019e5f6027cba10b0</flow>
+        <generation_source/>
+        <order>11</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-27 17:00:37</sys_created_on>
+        <sys_id>862d7d3c930b621019e5f6027cba10c8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-27 17:02:22</sys_updated_on>
+        <ui_id>8bf317f6-0731-46fc-8a17-34fd83348ff4</ui_id>
+        <values>H4sIAAAAAAAA/+2XXW/bNhSG/4qga8eTbEu2c7U2RrAAaQskQXdRFAJFUhY3StRIKq4X5L/3UKI+bGeu3XhYguVShzzkew7fh7S/PLiMuOfuhMy8ME4maOqNR2PPm43m83g8T7zZdO75mLgDN0cZhZmSYiHN9z3ipQk8PASI+EFCvDPkjSZnExT7Z7PYJ2fxZEZCH4fjiR8Mb6q8x0fIJEwVHK0/2wUgglPGiaS5e/7l68AtkIS9NJXu+cPW0KFiOYoph6l3SC6pdm4a0dtF6HVhvonAZUZzHbEmeG0XWNgR52oBI5BkVHkDl37TNCcU5CSIKzpwM5QTpIVctxFJEfmU8y6QslzDku+UEpghTZWjU+rQDDHurJhOHeTUwoauWe+bYn+DuPHILJVQ6AE2WlmOGQFFbi8c2ZbC8FU3nCyQRrdalliXsu20YJiqupuEJqjk+qIfqyd8KjQTeZ2iUcybbMHLLP9YN9FtF+idZKlADC1Mb0yxsDkUntymYnXTiL1kedVF2xUuMOLtV3JLkcTpJaPcHHVeZjHMHbhIa8niUhuZYAoOs7p9okqq2QtmUk6ro8xQUbB8GRVS3LNqQ5CfDZccPoYJFyvIV2yZDxE2tQ7h9NDwEuKLKvwZSWYK/wDLQPLjwFVrdcGRUl350P/or9Kor5uxKcdkR5XhTDKWrNDvYKt7aot9HFj4/Pk+P5NJ59vemh2AZcRyVUpk7LED11Vv6DjKDlDVUWYc8rRKS9hO7Lqf63ysByxf/pF81S6zeN0BU7rGvqbJ0VZei9TM20TqH1B6GQi1YBzM0CYr/w4PYBIV1aa2tVWb/wQnP6LDC8M4DuNgOu58OMcJmcZJiKZ43PluBXeqzJD8M6ru1B4i/i4Y9rY4jokDtDRMwD3MS0Kd3xtR+3RaSGIh4GLLtwkBpb9cVt1tCRk96wWqrelo4cBh8jW8O60kE+xeJZ0i7TDlKDitoXMnHGar6mUMnLUonaxUGqZpGNmAb+Mpm7xc7qwdbHTxpFdeBZinBzDY/xCgztgojbToYUdSWd4rqC1FPAhmvy6NqYZQ3C6O+6Yex+gBctt3S+xqtygqOKl8uUXibRO0FI73U1g/SzsQ9p4h7+UC8Vr8boRzlrHKEDWpp0eA7PUU9TZshHEPgRP83Tlg88bQFxe7So4x9OTnnpU3R786R/t7/0PTcMNH8aktfcDujaXfb3k6PtrUwZup/yemDvbbCm8YSZXxHxTrnrHfgwdwSsmuwXsjR/4Y+bGixui3rZ6nNB5j+PDtZ8l/7vfTmxvttVIy2rwlBVmf9so+YPv2yq4331FjPZzqjG85+Le7D9edf6fPvLDDIBiHbw5+9o1drMiISFEUtrYT39pfvwMsRUo1fRgAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Insurance Policy Update SLA">6e4b39b8930b621019e5f6027cba10b0</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-27 17:00:37</sys_created_on>
+        <sys_id>8e2d7d3c930b621019e5f6027cba10c7</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-27 17:02:22</sys_updated_on>
+        <ui_id>5ad15fd0-a024-4ab1-8b1d-b48d61c63415</ui_id>
+        <values>H4sIAAAAAAAA/+VYTW/bOBD9K4LOjlfyt3MrEhgIkG2AxttLtyAokYqJ0qRKUkkTw/99hyJlC7ZiW1sHSNCTweGQfDPz3pDyt1XISHgZkmk0zabT4WQcRf1+FI1G/RTHSdIfpUmU4EHYCQVeUvA0OOEUho+YF3ZcICZ0obBIrZUwnXP8/NVP3tSm0gXjRFERXn773glzrGA/Q1V4udqZOhUQxwnl4Dr3iHYAmud8M0TlnLPd1pcFn92EVMRCiToh/WWoIBQwZJhr2gmXWBBspHreWBTF5E7wrWHBhIEdQ+v8S7MXOHcSWb+MQlQpdXObIfJZcubsGht8b1SRmkJ513QhWUq1ywehGS64uarbnMNdbpgUbokL262WvFiKzy4d4WaDqihgKTSAoLkN1CL3YWT3C/n0pUI5Y6LMiZ/kMsV8M8LGKJYUxuJZhZTTJWyEljjPmXhAuZKPrFwMWJbdBw6DbsblExyq2YPo4tQC70JecXcG9uvS/BUrZqP4G7aBxQCIcWAIciXUslBlKh9RygtdTgC3tNsrXHdC/ayvONZ6GzmkHP0sLG6XBx8xckmzS1LFcvMJtnikPrh1p9LE8CAFp1vKpVIQZlHomjAADWLk3wIWk9Xq/vZTMMf6B4q7xv5ojpGiKfCu6xzX6335/J8tWsrseIyVzK7qQTYF7gW3Z7tt2sALLj6b4AZR9JEkB4e/P8W115BLwREhxeQgyciWT1oqg1wua0raF0Zrnp8AoeL5nWVmkDy/hsrTPGOUk6Z7ZWYndu6V3p95r7xLkgMgglz1mOBMlI8EAPpW7B8epF4S7/CspFftFrE2rNN9DeDAyOCltRJOgFMp4R7ODuYOTwPEqt+XlNnt9ZXRC6B/NgH0e+cRwGoT5iaRDTmv3oW2mpX/i/XHu/5AwdqCeN0ksFZnxm3P7K33BdxvpeA62dzM9SucO/MD8hVFdt6yBSxgqT8POf2iJ0YeqNmeXnkRaZ4w/9E07xmHqkKV4b3BYzQ++D2U1B6jLENLqBzL4c3snocaYUVRJgtBkH8t177foJIZU9p45/1G84WCfkQgQZiBWdCg9A423i0v4uNxVKm8yYIqEH+aDiCQoAwk2ATSLuw2TWtwxsfpuZvWDDNeVgM+hPJaOalSUr3SuI4U8gAjTuxqJ4KKzwrq99tekwQa298RrB/iq/r8rSmlOBn08Gjcj+MoiiMyjibjcTwZJdkIjwfZVqMIaZFCN4WdM6AKbI8qalR1jvb7j2upbRvNCagqCl5LYb+xe2MTWFhQ36CCdRy4byiJlJxisdNR5nBP/DXz+D1fh++uq3yI/5gKNt/NtDM15vqt3g0F+0ewnwW9sRSb0Kg3iUl6MRnH44tBRkYXU4KHF3iaDMd9QtNBds6nwPf/AGW9xNytFQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Insurance Policy Update SLA">6e4b39b8930b621019e5f6027cba10b0</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>022d181a-a91c-4941-887f-b170b8f69f6f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-27 17:00:37</sys_created_on>
+        <sys_id>c22d7d3c930b621019e5f6027cba10c4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-27 17:02:22</sys_updated_on>
+        <ui_id>f43e9624-5660-4ef4-ae34-5a591b51338f</ui_id>
+        <values>H4sIAAAAAAAA/+2XXW/bNhSG/wohYHeOJ39ItnK1LkawAGkLxEF3URQCRVIWN0rURCqpG+S/71CiPmxnrt14WILlJoAOecj3HL4PGX9+cDh1zp0pnbt+FE/xzJ2MJ647HwdBNAlidz4L3BGhzsDJcMpgZsGILMz3HRalCTw8jAOGJwH2z/zAm55N5/AnguyzOR3HFGKEBtHwpsp7fIRMylUu8PqTXQAiJOGCFixzzj9/GTg5LmAvzQrn/GFr6FCxAkdMwNRbXKyYRjeN6O0i9Do331SSMmWZDnkTvLYLLOwIulrACCQZVe7AYV81yygDOTEWig2cFGcUa1ms20jBMP2YiS6Q8EzDku+UkoRjzRTSCUMsxVyge64ThFEtbOiY9b4q/g3ETcZmqZhBD4jRyjPCKShyeuHQthSGr7rheIE1XuqiJLos2k5LTpiqu0lZjEuhL/qxesLHXHOZ1SkaR6LJlqJMsw91E512gd5JlgrEsNz0xhQLm0Ph8TKR9zeN2EueVV20XRGSYNF+xUuGC5JccibMUWdlGsHcgYO1LnhUaiMTTCFgVrdPWEk1e8FMJlh1lCnOc56twryQd7zaEOSnw5WAj2Es5D3kK77KhpiYWodwenh4CfFFFf6EC24Kfw/LQPLjwFFrdSGwUl350P/wr9Kor5uxKcdkh5XhTDIpeK7fwVZ3zBb7OLDwjYJ9fqbTzre9NTsAy5BnqiywsccOXFe9oeMoO0BVR5lxyNMqLWE7set+LvpQD1i+RkfyVbvM4nULTOka+5ompK28Fqm5u4nUP6D0MhBqwTiYoU1W/h0ewCQqrE1ta6s2/wFOvkeH6/tR5EfebNL5MCAxnUWxj2dk0vnuHu7UIsXFn2F1p/YQGe2CYW+L45g4QEvDBNzDoqQM/d6I2qfTQhJJCRdbtk0IKP35supuS8j4WS9QbU2kJYLDFGt4d1pJJti9SjrBGnGFFJzWEN1KxG1VvYwBWssSpaXSME3DyAZ8G0/Z9OVyZ+1go4snvfIqwDw9gN7+hwB3xsZJqGUPO5oU5Z2C2hIsPG/+y8qYagjF7eK4b+pxjB4gt3235K52i6KCk8pWWyQum6ClcLKfwvpZ2oGw9wy5LxeI1+J3I1zwlFeGqEk9PQJ0r6eYu2EjQnoInODnzgGbN4a+uNhVcoyhpz/2rLw5+tU5erT3NzTzN3wUndrSB+zeWPrXLU9HR5vaezP1/8TU3n5bkQ0jqTL6gxHdM7bn/oQ0TxlayeyJn9Lbw0f+W/J9bY3ll62yp9QeY33/7R+U/9z5p7c53muleLx5X0q6Pu3lfcD27eVdb76jxno40anYcvBvt++vO//Onnl1+5438d8c/Oy7O7+nY1rIPLe1nfj+/vI36Zcli4cYAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="SLA Percentage Timer">a1a50c4573873300d70877186bf6a762</action_type>
+        <action_type_parent display_value="SLA Percentage Timer">6f0ebf3c73833300d70877186bf6a729</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>a1a50c4573873300d70877186bf6a762</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Insurance Policy Update SLA">6e4b39b8930b621019e5f6027cba10b0</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-27 17:00:37</sys_created_on>
+        <sys_id>c62d7d3c930b621019e5f6027cba10bf</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-27 17:02:22</sys_updated_on>
+        <ui_id>4c3e2a6b-594b-46a3-bcd6-1c011bf35f69</ui_id>
+        <values>H4sIAAAAAAAA/+1bbW/iOBD+K5XVj4gL75RvvUVIe+ptT0u1XzanyCQOeGuSnOPQdhH/fceOHRLeCpTuLlykqq3H9mTm8TPO4MFf54h6qIfqN7hluc1Wp9HtNBqW5XWsbqdT67ZHfht32k1UQQGeEhgZEe6SQOAxAdkMs0QKWxY0PBpHDL98ycvcCWUeJwHqff23giLMQYkgHPXmK137WsHwiDAY+k/ejE2miZdIymggyBgemAru9OyPmTTknjSnVkHkWZDAI2CHj1lMKmiKAw+LkL+gnuAJCDjB3n3AXrIRE9AO2pAc+xzT7/DApiXH+QQcc0nalzUdjVAq9vtY4CFodkXC9VB3ElKXxCkkHvFxwsSHvCwdcB8JGgbpFIFHzMwOWTINPqVgoEyBWRCQJDEYQSLpp7Rcu+EPJ+HTZ2PlgAYKEt3JQhezrIWF4HSUCGnPHCX0YRXlKQ0cwwpJgHTIOu6EkSnY4ExxFNFg7EQ8nFH1XHBjWh0zaFR9Fj6BvTEdB1XsSp+rsCK4OgB5X4m/YE4lAH+DGpi8qKD4Jf7AcBwvYQD8nf8S6UQKinbfSRGUU1xOI3ELD5gR7emiogMDezspebNkn8DxoxMz7HDiAqty0bEeGwdHxh5mmMh4ADuuhne3V5+NHVsN1DGy5GsxSj7n5DpO6rvjREv2CZRGvRgoxrotAWO8OtfA8YcEc3cyoITJ9Uwd3RJN+fWY0ZiCnQ6ElS8nKnVrcZVfKZ+HU0dFDg2iRMQbV/5cwq++m/e5zV+6l/d6GX5zG80Ij8F8G/VsVKtaNqrY0s+Ikef70TfiCuiBYV7CsUjHQevanZl/1MRveIarDAfjKpAPQFNarmeqz0aLBbQ4YVi64RhNzlPIH2PnDSppDKsWYcoP16Cg1Goyg2SAH22MxPq4yXJ2TIAtjH5XhgxCPsVC9f81vP+0viRDd0KmOH3IknGE9wZ91xt5lufWR26nLllhQXvU9Brwt9lt1fDaatooZ5WRV699GY2Oj10i4nTOkEoLgM4DKVQz57Zt58NNNnvyl1ZpS6W2rTY9WGj2kg1I8Tf9cg/MujJpqjiTx0WdeiNK36jrk1nBnsxf051tzFssUnt61lfPzXt2GAnGYpJ1NlTvAn5eY3kB6u0jLw38HZgctxzNvZcjv0PY6M8wZAQHCv6s561oP0D++8egYO1JEB9pY3dDXlRcxH3p/HEwt/aGeXUH3binqM5L43bR8+NwbuyNs37HFOCVsktDVfl5HJi1/cCUaB745qxeyzU+GmOdTBnr3FBRxjGuqjF7vL7N/G1Zaqbr+Fz1tDwIi34fxIOVxPVYSljWLlI0rZt2RovF+gfSMkcuc+QyRy5z5HcFv8yRyxy5zJHLHLnMkcsc+Rxy5FwdZm6OmU2co5WajYo7tfqA3fI03xzQp4ElT7t3FoU2HIUbIeiE2bLQxgPM7mjwuKmOlNB+qlSXEtLg03UdhxWt0bWlXO0o5926v2KDyrtVje9eJ3pDQfWNNSAt6a+t2mmrqictouhV3J55XSaPd/q7DyaHcL1Zcv134nqW7eZKgKZqegjVl/n8z6e7zvlX+Z4zaZ3zeb83QCE2ad7ga0br1qXR2pDgjLld+JRxmVv3qotbPD9kg25cGpPPm8Tqz0VyV3tW9PMQpr7yNcSSqT+DqTu+jlcStSTqLyHqpRCvPGAoCfhbELBML0sqlodUJUl/GUnL46ULI+QZHC9l9+xev1WR7V53t1eyPnj10Vyr2HrfQlMgrfOtMODeCE/+zmy3LOv/dOduvwtBGd758jLIB/16o+v5rY5bq1ujdr1m4ZaLSa3Zrd/ceG6rK68lbbhBtL7a73ODyPix5NEJP9f/AHi9v0TtOgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="SLA Percentage Timer">a1a50c4573873300d70877186bf6a762</action_type>
+        <action_type_parent display_value="SLA Percentage Timer">6f0ebf3c73833300d70877186bf6a729</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>a1a50c4573873300d70877186bf6a762</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Insurance Policy Update SLA">6e4b39b8930b621019e5f6027cba10b0</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-27 17:00:37</sys_created_on>
+        <sys_id>ca2d7d3c930b621019e5f6027cba10c4</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-27 17:02:22</sys_updated_on>
+        <ui_id>838c5097-213a-43e7-965c-770083cc3198</ui_id>
+        <values>H4sIAAAAAAAA/+1bbW/iOBD+K5XVj4gL75RvvUVIe+ptT0u1XzanyCQOeGuSnOPQdhH/fceOHRLeCpTuLlykqq3H9mTm8TPO4MFf54h6qIfqN7hluc1Wp9HtNBqW5XWsbqdT67ZHfht32k1UQQGeEhgZEe6SQOAxAdkMs0QKOy1oeDSOGH75kpe5E8o8TgLU+/pvBUWYgxJBOOrNV7r2tYLhEWEw9J+8GZtMEy+RlNFAkDE8MBXc6dkfM2nIPWlOrYLIsyCBR8AOH7OYVNAUBx4WIX9BPcETEHCCvfuAvWQjJqAdtCE59jmm3+GBTUuO8wk45pK0L2s6GqFU7PexwEPQ7IqE66HuJKQuiVNIPOLjhIkPeVk64D4SNAzSKQKPmJkdsmQafErBQJkCsyAgSWIwgkTST2m5dsMfTsKnz8bKAQ0UJLqThS5mWQsLwekoEdKeOUrowyrKUxo4hhWWfKIaso47YWQKNjhTHEU0GDsRD2dUPRfcmFbHDBpVn4VPYG9Mx0EVu9LnKqwIrg5A3lfiL5hTCcDfoAYmLyoofok/MBzHSxgAf+e/RDqRgqLdd1IE5RSX00jcwgNmRHu6qOjAwN5OSt4s2Sdw/OjEDDucuMCqXHSsx8bBkbGHGSYyHsCOq+Hd7dVnY8dWA3WMLPlajJLPObmOk/ruONGSfQKlUS8GirFuS8AYr841cPwhwdydDChhcj1TR7dEU349ZjSmYKcDYeXLiUrdWlzlV8rn4dRRkUODKBHxxpU/l/Cr7+Z9bvOX7uW9Xobf3EYzwmMw30Y9G9Wqlo0qtvQzYuT5fvSNuAJ6YJiXcCzScdC6dmfmHzXxG57hKsPBuArkA9CUluuZ6rPRYgEtThiWbjhGk/MU8sfYeYNKGsOqRZjywzUoKLWazCAZ4EcbI7E+brKcHRNgC6PflSGDkE+xUP1/De8/rS/J0J2QKU4fsmQc4b1B3/VGnuW59ZHbqUtWWNAeNb0G/G12WzW8tpo2ylll5NVrX0aj42OXiDidM6TSAqDzQArVzLlt2/lwk82e/KVV2lKpbatNDxaavWQDUvxNv9wDs65MmirO5HFRp96I0jfq+mRWsCfz13RnG/MWi9SenvXVc/OeHUaCsZhknQ3Vu4Cf11hegHr7yEsDfwcmxy1Hc+/lyO8QNvozDBnBgYI/63kr2g+Q//4xKFh7EsRH2tjdkBcVF3FfOn8czK29YV7dQTfuKarz0rhd9Pw4nBt746zfMQV4pezSUFV+HgdmbT8wJZoHvjmr13KNj8ZYJ1PGOjdUlHGMq2rMHq9vM39blprpOj5XPS0PwqLfB/FgJXE9lhKWtYsUTeumndFisf6BtMyRyxy5zJHLHPldwS9z5DJHLnPkMkcuc+QyRz6HHDlXh5mbY2YT52ilZqPiTq0+YLc8zTcH9GlgydPunUWhDUfhRgg6YbYstPEAszsaPG6qIyW0nyrVpYQ0+HRdx2FFa3RtKVc7ynm37q/YoPJuVeO714neUFB9Yw1IS/prq3baqupJiyh6FbdnXpfJ453+7oPJIVxvllz/nbieZbu5EqCpmh5C9WU+//PprnP+Vb7nTFrnfN7vDVCITZo3+JrRunVptDYkOGNuFz5lXObWveriFs8P2aAbl8bk8yax+nOR3NWeFf08hKmvfA2xZOrPYOqOr+OVRC2J+kuIeinEKw8YSgL+FgQs08uSiuUhVUnSX0bS8njpwgh5BsdL2T27129VZLvX3e2VrA9efTTXKrbet9AUSOt8Kwy4N8KTvzPbLcv6P9252+9CUIZ3vrwM8kG/3uh6fqvj1urWqF2vWbjlYlJrdus3N57b6sprSRtuEK2v9vvcIDJ+LHl0ws/1PwBQfKSl7ToAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=6e4b39b8930b621019e5f6027cba10b0"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=6e4b39b8930b621019e5f6027cba10b0^sys_idNOT INc22d7d3c930b621019e5f6027cba10c1,c62d7d3c930b621019e5f6027cba10c5"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">4a2d7d3c930b621019e5f6027cba10c0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Insurance Policy Update SLA">6e4b39b8930b621019e5f6027cba10b0</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-27 17:00:37</sys_created_on>
+        <sys_id>c22d7d3c930b621019e5f6027cba10c1</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-27 17:00:42</sys_updated_on>
+        <ui_id>022d181a-a91c-4941-887f-b170b8f69f6f</ui_id>
+        <values>H4sIAAAAAAAA/+1UXW/TMBT9KyjPaeQkTUT7NoEmIQGT2LQXmKIb22ktHNvYTrtS9b9znY+2Yp1AG4+8xce+955zfJx9pDtvOu/u9JVzYqWi5deHOBIqYPi9jxS0PFpGVCsmvNCq6oE42oDswgZ+MuGMhN39CaFrIZnlYzcDFms8t9Fy/9uW3xleSai5xMJbb4VaYblguGoINOmCpjTPyjwjJHs7T+syr9OM5cAhx3NT4buJ3JuPPRI/yzrMQ9xNk7RlgVZK4og/eq4Yx9ENSMfjqAXFwGu7OyKWA7tR8gSshfKD4hYenfiJvbOiCAcbjhrpaMdxWY1WTS5pQfmNCQQHxEMtJwu17Fr1edARTOYNdNKfmdw57MdNIB1YjJSa27XefpkGXgvVCxw3paYgjyvwaEPdee7CxXDJW2xUtWAMmlMZqzeiL0YubbKSuEgaqbc4NCQlARqIJ+gRJNeIv+/he7AiqPiEbbB4oFmDE7TqU4XtvEUJh96W6kcXCA0CRynV4AYecNQK469wzoaPrA/x00iepXG/n9OcZ1DWs2Ixr2fzEvJZTVk5SylJ07rJi6ZcJM6D79zh8K0jJGcoz0jMJ3ua5Vf3+xcvYQFFU6SkuPwS5uWll3DhDTwf/+wP8Q8X9pfpJ4T8j/95/IWrhhiP2vrhL07/Q4j6MMENuWGcCodE7gL2Yfpvh40dBkDQc2ir7fcg4YQdfgHoaZjgAQYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">822d7d3c930b621019e5f6027cba10c5</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Insurance Policy Update SLA">6e4b39b8930b621019e5f6027cba10b0</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-27 17:00:37</sys_created_on>
+        <sys_id>c62d7d3c930b621019e5f6027cba10c5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-27 17:00:42</sys_updated_on>
+        <ui_id>cc2f93f1-7ef2-4bf1-8396-295ffc9d4fdb</ui_id>
+        <values>H4sIAAAAAAAA/+1UXW/TMBT9KyjPaeQkTUT7NoEmIQGT2LQXmKIb22ktHNvYTrtS9b9znY+2Yp1AG4+8xce+955zfJx9pDtvOu/u9JVzYqWi5deHOBIqYPi9jxS0PFpGVCsmvNCq6oE42oDswgZ+MuGMhN39CaFrIZnlYzcDFms8t9Fy/9uW3xleSai5xMJbb4VaYblguGoINOmCpjTPyjwjJHs7T+syr9OM5cAhx3NT4buJ3JuPPRI/yzrMQ9xNk7RlgVZK4og/eq4Yx9ENSMfjqAXFwGu7OyKWA7tR8gSshfKD4hYenfiJvbOiCAcbjhrpaMdxWY1WTS5pQfmNCQQHxEMtJwu17Fr1edARTOYNdNKfmdw57MdNIB1YjJSa27XefpkGXgvVCxw3paYgjyvwaEPdee7CxXDJW2xUtWAMmlMZqzeiL0YubbKSuEgaqbc4NCQlARqIJ+gRJNeIv+/he7AiqPiEbbB4oFmDE7TqU4XtvEUJh96W6kcXCA0CRynV4AYecNQK469wzoaPrA/x00iepXG/n9OcZ1DWs2Ixr2fzEvJZTVk5SylJ07rJi6ZcJM6D79zh8K0jJGcoz0jMJ3ua5Vf3+xcvYQFFU6SkuPwS5uWll3DhDTwf/+wP8Q8X9pfpJ4T8j/95/IWrhhiP2vrhL07/Q4j6MMENuWGcCodE7gL2Yfpvh40dBkDQc2ir7fcg4YQdfgHoaZjgAQYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=6e4b39b8930b621019e5f6027cba10b0"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=6e4b39b8930b621019e5f6027cba10b0"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_6e4b39b8930b621019e5f6027cba10b0^sys_idNOT IN0a2d7d3c930b621019e5f6027cba10a5,862d7d3c930b621019e5f6027cba10a8"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>task_sla_record</element>
+        <help/>
+        <hint/>
+        <label>task_sla_record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_6e4b39b8930b621019e5f6027cba10b0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-27 17:00:37</sys_created_on>
+        <sys_id>0a2d7d3c930b621019e5f6027cba10a5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Healthcare Management " source="eb49735f471222104bebe454116d43bf">eb49735f471222104bebe454116d43bf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-27 17:00:37</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>sla_flow_inputs</element>
+        <help/>
+        <hint/>
+        <label>sla_flow_inputs</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_6e4b39b8930b621019e5f6027cba10b0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-27 17:00:37</sys_created_on>
+        <sys_id>862d7d3c930b621019e5f6027cba10a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Healthcare Management " source="eb49735f471222104bebe454116d43bf">eb49735f471222104bebe454116d43bf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-27 17:00:37</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_6e4b39b8930b621019e5f6027cba10b0"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_6e4b39b8930b621019e5f6027cba10b0"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_6e4b39b8930b621019e5f6027cba10b0"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>insurance_policy_update_sla</internal_name>
+        <label_cache>[{"name":"5ad15fd0-a024-4ab1-8b1d-b48d61c63415.Record","label":"10 - Look Up Record➛Insurance Record","reference":"u_insurance","reference_display":"Insurance","type":"reference","base_type":"reference","usedInstances":{"8bf317f6-0731-46fc-8a17-34fd83348ff4":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"SLA Task_1.task_sla_record","label":"Trigger - SLA Task➛Task SLA Record","reference":"task_sla","reference_display":"Task SLA","type":"reference","base_type":"reference","usedInstances":{"1f2882a7-e616-4da3-89ef-3b6214364ec3":["record"]},"attributes":{}},{"name":"f88ecefa-258a-4a29-9674-07b55a3b02da.Record","label":"7 - Look Up Record➛Insurance Record","reference":"u_insurance","reference_display":"Insurance","type":"reference","base_type":"reference","usedInstances":{"7f9dc8e9-7b27-4190-904e-4354b31e2626":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"29ea39a6-6954-4854-b9b3-8d2fd695cd9b.Record","label":"3 - Look Up Record➛Insurance Record","reference":"u_insurance","reference_display":"Insurance","type":"reference","base_type":"reference","usedInstances":{"f43e9624-5660-4ef4-ae34-5a591b51338f":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"SLA Task_1.task_sla_record.sys_id","label":"Trigger - SLA Task➛Task SLA Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"task_sla","column_name":"sys_id","usedInstances":{"29ea39a6-6954-4854-b9b3-8d2fd695cd9b":["conditions"],"f88ecefa-258a-4a29-9674-07b55a3b02da":["conditions"],"5ad15fd0-a024-4ab1-8b1d-b48d61c63415":["conditions"]}},{"name":"4c3e2a6b-594b-46a3-bcd6-1c011bf35f69.status","label":"1 - SLA Percentage Timer➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Paused","value":"paused","order":0.0},{"label":"Completed","value":"completed","order":1.0},{"label":"Repair","value":"repair","order":2.0},{"label":"Skipped","value":"skipped","order":3.0},{"label":"Cancelled","value":"cancelled","order":4.0}],"usedInstances":{"022d181a-a91c-4941-887f-b170b8f69f6f":["condition"],"cc2f93f1-7ef2-4bf1-8396-295ffc9d4fdb":["condition"]},"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice"}}]</label_cache>
+        <master>true</master>
+        <name>Insurance Policy Update SLA</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Insurance Policy Update SLA">6e4b39b8930b621019e5f6027cba10b0</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-27 17:00:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1b2dbd3c930b621019e5f6027cba10b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-27 17:00:42</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=1b2dbd3c930b621019e5f6027cba10b6"/>
+    <sys_variable_value action="delete_multiple" query="document_key=1b2dbd3c930b621019e5f6027cba10b6"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=1b2dbd3c930b621019e5f6027cba10b6"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=1b2dbd3c930b621019e5f6027cba10b6^sys_idNOT IN972dbd3c930b621019e5f6027cba10b7"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>1b2dbd3c930b621019e5f6027cba10b6</id>
+        <name>Insurance Policy Update SLA</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-27 17:00:42</sys_created_on>
+        <sys_id>972dbd3c930b621019e5f6027cba10b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-27 17:00:42</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=972dbd3c930b621019e5f6027cba10b7"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=1b2dbd3c930b621019e5f6027cba10b6^sys_idNOT IN532dbd3c930b621019e5f6027cba10c7,5f2dbd3c930b621019e5f6027cba10b8"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>task_sla_record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>task_sla_record</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Insurance Policy Update SLA">1b2dbd3c930b621019e5f6027cba10b6</model>
+        <model_id>1b2dbd3c930b621019e5f6027cba10b6</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_1b2dbd3c930b621019e5f6027cba10b6</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="task_sla">task_sla</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-27 17:00:42</sys_created_on>
+        <sys_id>532dbd3c930b621019e5f6027cba10c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-27 17:00:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=532dbd3c930b621019e5f6027cba10c7"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD132dbd3cb10b62102c9828e26bab5eb8</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>eb49735f471222104bebe454116d43bf</scope_name>
+        <serialized_content>{"FlowDesigner:FD132dbd3cb10b62102c9828e26bab5eb8":{"duration":"String","duration.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"duration\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"32\"}"},"relative_duration_works_on":"String","relative_duration_works_on.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"relative_duration_works_on\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"32\"}"},"is_repair":"Boolean","is_repair.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"True/False\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"boolean\",\"choiceOption\":\"\",\"default_value\":\"false\",\"label\":\"is_repair\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"32\"}"},"duration_type":"String","duration_type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"duration_type\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"32\"}"},"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"32\"}"}},"FlowDesigner:FD132dbd3cb10b62102c9828e26bab5eb8.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD132dbd3cb10b62102c9828e26bab5eb8\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"sla_flow_inputs\",\"mandatory\":\"false\",\"order\":\"100\",\"max_length\":\"4096\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-27 17:00:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d32dbd3c930b621019e5f6027cba10b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-27 17:00:42</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD132dbd3cb10b62102c9828e26bab5eb8,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sla_flow_inputs</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>sla_flow_inputs</label>
+        <mandatory>false</mandatory>
+        <max_length>4096</max_length>
+        <model display_value="Insurance Policy Update SLA">1b2dbd3c930b621019e5f6027cba10b6</model>
+        <model_id>1b2dbd3c930b621019e5f6027cba10b6</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_1b2dbd3c930b621019e5f6027cba10b6</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-27 17:00:42</sys_created_on>
+        <sys_id>5f2dbd3c930b621019e5f6027cba10b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-27 17:00:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5f2dbd3c930b621019e5f6027cba10b8"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=1b2dbd3c930b621019e5f6027cba10b6"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=1b2dbd3c930b621019e5f6027cba10b6"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=1b2dbd3c930b621019e5f6027cba10b6^sys_idNOT IN232dbd3c930b621019e5f6027cba10e7"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Insurance Policy Update SLA">1b2dbd3c930b621019e5f6027cba10b6</flow>
+        <name>SLA Task</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-27 17:00:43</sys_created_on>
+        <sys_id>232dbd3c930b621019e5f6027cba10e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-27 17:00:43</sys_updated_on>
+        <trigger_definition display_value="SLA Task">f5ce00a873723300d70877186bf6a759</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/4uOBQApu0wNAgAAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>sla_task</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=1b2dbd3c930b621019e5f6027cba10b6^sys_idNOT IN232dbd3c930b621019e5f6027cba10e3,232dbd3c930b621019e5f6027cba10e4,2b2dbd3c930b621019e5f6027cba10e3,2b2dbd3c930b621019e5f6027cba10e4,632dbd3c930b621019e5f6027cba10e6,6b2dbd3c930b621019e5f6027cba10e5,6b2dbd3c930b621019e5f6027cba10e6,6f2dbd3c930b621019e5f6027cba10e1,eb2dbd3c930b621019e5f6027cba10e0"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Insurance Policy Update SLA">1b2dbd3c930b621019e5f6027cba10b6</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>022d181a-a91c-4941-887f-b170b8f69f6f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-27 17:00:43</sys_created_on>
+        <sys_id>232dbd3c930b621019e5f6027cba10e3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-27 17:00:43</sys_updated_on>
+        <ui_id>f43e9624-5660-4ef4-ae34-5a591b51338f</ui_id>
+        <values>H4sIAAAAAAAA/+2XXW/bNhSG/wohYHeOJ39ItnK1LkawAGkLxEF3URQCRVIWN0rURCqpG+S/71CiPmxnrt14WILlJoAOecj3HL4PGX9+cDh1zp0pnbt+FE/xzJ2MJ647HwdBNAlidz4L3BGhzsDJcMpgZsGILMz3HRalCTw8jAOGJwH2z/zAm55N5/AnguyzOR3HFGKEBtHwpsp7fIRMylUu8PqTXQAiJOGCFixzzj9/GTg5LmAvzQrn/GFr6FCxAkdMwNRbXKyYRjeN6O0i9Do331SSMmWZDnkTvLYLLOwIulrACCQZVe7AYV81yygDOTEWig2cFGcUa1ms20jBMP2YiS6Q8EzDku+UkoRjzRTSCUMsxVyge64ThFEtbOiY9b4q/g3ETcZmqZhBD4jRyjPCKShyeuHQthSGr7rheIE1XuqiJLos2k5LTpiqu0lZjEuhL/qxesLHXHOZ1SkaR6LJlqJMsw91E512gd5JlgrEsNz0xhQLm0Ph8TKR9zeN2EueVV20XRGSYNF+xUuGC5JccibMUWdlGsHcgYO1LnhUaiMTTCFgVrdPWEk1e8FMJlh1lCnOc56twryQd7zaEOSnw5WAj2Es5D3kK77KhpiYWodwenh4CfFFFf6EC24Kfw/LQPLjwFFrdSGwUl350P/wr9Kor5uxKcdkh5XhTDIpeK7fwVZ3zBb7OLDwjYJ9fqbTzre9NTsAy5BnqiywsccOXFe9oeMoO0BVR5lxyNMqLWE7set+LvpQD1i+RkfyVbvM4nULTOka+5ompK28Fqm5u4nUP6D0MhBqwTiYoU1W/h0ewCQqrE1ta6s2/wFOvkeH6/tR5EfebNL5MCAxnUWxj2dk0vnuHu7UIsXFn2F1p/YQGe2CYW+L45g4QEvDBNzDoqQM/d6I2qfTQhJJCRdbtk0IKP35supuS8j4WS9QbU2kJYLDFGt4d1pJJti9SjrBGnGFFJzWEN1KxG1VvYwBWssSpaXSME3DyAZ8G0/Z9OVyZ+1go4snvfIqwDw9gN7+hwB3xsZJqGUPO5oU5Z2C2hIsPG/+y8qYagjF7eK4b+pxjB4gt3235K52i6KCk8pWWyQum6ClcLKfwvpZ2oGw9wy5LxeI1+J3I1zwlFeGqEk9PQJ0r6eYu2EjQnoInODnzgGbN4a+uNhVcoyhpz/2rLw5+tU5erT3NzTzN3wUndrSB+zeWPrXLU9HR5vaezP1/8TU3n5bkQ0jqTL6gxHdM7bn/oQ0TxlayeyJn9Lbw0f+W/J9bY3ll62yp9QeY33/7R+U/9z5p7c53muleLx5X0q6Pu3lfcD27eVdb76jxno40anYcvBvt++vO//Onnl1+5438d8c/Oy7O7+nY1rIPLe1nfj+/vI36Zcli4cYAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Insurance Policy Update SLA">1b2dbd3c930b621019e5f6027cba10b6</flow>
+        <generation_source/>
+        <order>7</order>
+        <parent_ui_id>cc2f93f1-7ef2-4bf1-8396-295ffc9d4fdb</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-27 17:00:43</sys_created_on>
+        <sys_id>232dbd3c930b621019e5f6027cba10e4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-27 17:00:43</sys_updated_on>
+        <ui_id>f88ecefa-258a-4a29-9674-07b55a3b02da</ui_id>
+        <values>H4sIAAAAAAAA/+VYTW/bOBD9K4LOjlfyt3MrEhgIkG2AxttLtyAokYqJ0qRKUkkTw/99hyJlC7ZiW1sHSNCTweGQfDPz3pDyt1XISHgZkmk0zabT4WQcRf1+FI1G/RTHSdIfpUmU4EHYCQVeUvA0OOEUho+YF3ZcICZ0obBIrZUwnXP8/NVP3tSm0gXjRFERXn773glzrGA/Q1V4udqZOhUQxwnl4Dr3iHYAmud8M0TlnLPd1pcFn92EVMRCiToh/WWoIBQwZJhr2gmXWBBspHreWBTF5E7wrWHBhIEdQ+v8S7MXOHcSWb+MQlQpdXObIfJZcubsGht8b1SRmkJ513QhWUq1ywehGS64uarbnMNdbpgUbokL262WvFiKzy4d4WaDqihgKTSAoLkN1CL3YWT3C/n0pUI5Y6LMiZ/kMsV8M8LGKJYUxuJZhZTTJWyEljjPmXhAuZKPrFwMWJbdBw6DbsblExyq2YPo4tQC70JecXcG9uvS/BUrZqP4G7aBxQCIcWAIciXUslBlKh9RygtdTgC3tNsrXHdC/ayvONZ6GzmkHP0sLG6XBx8xckmzS1LFcvMJtnikPrh1p9LE8CAFp1vKpVIQZlHomjAADWLk3wIWk9Xq/vZTMMf6B4q7xv5ojpGiKfCu6xzX6335/J8tWsrseIyVzK7qQTYF7gW3Z7tt2sALLj6b4AZR9JEkB4e/P8W115BLwREhxeQgyciWT1oqg1wua0raF0Zrnp8AoeL5nWVmkDy/hsrTPGOUk6Z7ZWYndu6V3p95r7xLkgMgglz1mOBMlI8EAPpW7B8epF4S7/CspFftFrE2rNN9DeDAyOCltRJOgFMp4R7ODuYOTwPEqt+XlNnt9ZXRC6B/NgH0e+cRwGoT5iaRDTmv3oW2mpX/i/XHu/5AwdqCeN0ksFZnxm3P7K33BdxvpeA62dzM9SucO/MD8hVFdt6yBSxgqT8POf2iJ0YeqNmeXnkRaZ4w/9E07xmHqkKV4b3BYzQ++D2U1B6jLENLqBzL4c3snocaYUVRJgtBkH8t177foJIZU9p45/1G84WCfkQgQZiBWdCg9A423i0v4uNxVKm8yYIqEH+aDiCQoAwk2ATSLuw2TWtwxsfpuZvWDDNeVgM+hPJaOalSUr3SuI4U8gAjTuxqJ4KKzwrq99tekwQa298RrB/iq/r8rSmlOBn08Gjcj+MoiiMyjibjcTwZJdkIjwfZVqMIaZFCN4WdM6AKbI8qalR1jvb7j2upbRvNCagqCl5LYb+xe2MTWFhQ36CCdRy4byiJlJxisdNR5nBP/DXz+D1fh++uq3yI/5gKNt/NtDM15vqt3g0F+0ewnwW9sRSb0Kg3iUl6MRnH44tBRkYXU4KHF3iaDMd9QtNBds6nwPf/AGW9xNytFQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="SLA Percentage Timer">a1a50c4573873300d70877186bf6a762</action_type>
+        <action_type_parent display_value="SLA Percentage Timer">6f0ebf3c73833300d70877186bf6a729</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>a1a50c4573873300d70877186bf6a762</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Insurance Policy Update SLA">1b2dbd3c930b621019e5f6027cba10b6</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-27 17:00:43</sys_created_on>
+        <sys_id>2b2dbd3c930b621019e5f6027cba10e3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-27 17:00:43</sys_updated_on>
+        <ui_id>838c5097-213a-43e7-965c-770083cc3198</ui_id>
+        <values>H4sIAAAAAAAA/+1bbW/iOBD+K5XVj4hLeSkt33pbIe2qtz2Var9sTpFJHPDWJDnHoWUR/33Hjh0SAhQo3V3YSFXbjO3JzDPPOIOHfJ0h6qEualzjtuW22p3mVafZtCyvY111OhdXlwP/EncuW6iGAjwmMDMi3CWBwEMCsglmiRR22nDh0ThiePolL3NHlHmcBKj79b8aijAHJYJw1J0tDW1rBcMDwmDqv3kzVpkmppGU0UCQIdwwFdzp1R8zacg9ac5FDZEXQQKPgB0+ZjGpoTEOPCxCPkVdwRMQcIK9+4BNsxkj0A7akJz7EtPvcMOWJef5BBxzSTqWXToaoVTs32KB+6DZFQnXU91RSF0Sp5B4xMcJEx/ysnTCfSRoGKRLBB4wszpkyTj4nIKBMgUmICBJYjCCRNJPabl2w++PwucHY2WPBgoSPchCF7PsCgvB6SAR0p4ZSujjMspjGjiGFZa8o5pSxp0wMgYbnDGOIhoMnYiHE6ruC26M60MGF3Wfhc9gb0yHQR270uc6RATXeyC/VeIvmFMJwD+gBhbPayiexh8YjuMFDIC/838inUhB0e47KYJyictpJG7gBhOiPZ3XdGJgbyMlrxfsEzh+cmKGHU5cYFUuO8q5sXNmbGGGyYxHsOOsf3dz9mDsWGugzpEFX4tZ8pCT6zxpbM4TLdkmUZqNYqIY69YkjPHqWBPH7xPM3VGPEibjmTq6Jpvy8ZjQmIKdDqSVLxcqdaW8ykfK5+HYUZlDgygR8crIH0v6NTbzPrf5S/fyXi/Sb2ajCeExmG+jro0u6paNarb0M2Lk5X7wjbgCRmCal3As0nlwde5OzD9q4Tc8wXWGg2EdyAegKS3nEzVmo/kcrjhhWLrhGE3Oc8ifYucNKmkMUYsw5btrUFBqNZlBMsH3NkZivd9iuTomwBZGvytDeiEfY6HGP/XvP5dD0ndHZIzTmywYR3i3d+t6A8/y3MbA7TQkKyy4HrS8JvxtXbUvcCmaNspZZeT1c19mo+Njl4g4XdOn0gKgc08K1cqZbdv5dJOXXflLq7SlUttWmx4Emk2zCSn+ZlzugdlQJk0VZ/K4qFNvROkTtbyYFezJ/DXD2ca8xiK1p2djjdy6F4eRYChG2WBTjc7h5zWWF6BeP/PUwN+AyX7haG0djvwOYaO/w5ARHCj4s5G3ov0I9e9fvYK1B0F8oI3dDHlRcRH3hfP7wdzeGublHXTlnqIGT43bRc/3w7m5Nc76GVOAV8pODVXl535gXmwHpkRzxydn/VzGeG+MdTFlrHNDRRnHuKrmbPH4NuvXVamZrv1r1cPyICz6vRMPlgrXfSlhWZtI0bKuLzNazMsfSKsauaqRqxq5qpHfFfyqRq5q5KpGrmrkqkauauRjqJFzfZiZOWY2eY6WejYq71T0AbvFab45oE8TS552b2wKrTgKN0LQCatlo40HmN3R4GlVHymht6lS3UpIk0/3dRxWtEb3lnK9o5x3ZX/FCpV3yxrfvU/0hobqG3tAWnJbitphu6oHbaLoKK6vvE6Txxv93QaTXbjeqrj+O3E9q3ZzLUDTNd2F6ot6/ufTXdf8y3zPmVTmfN7vFVCIVZpX+JrRun1qtDYkOGJuFz5lnObWveziGs932aCbp8bk4yax+nOS3NWeFf3chamvfA2xYurPYOqGr+NVRK2I+kuIeirEqw4YKgL+FgSsysuKitUhVUXSX0bS6njpxAh5BMdL2Xt2r79Vke1edzdnsj949tG8VrH2fQtNgbTPt8SAeyM8+DPzsm1Zf9I7d9u9EJThnW8vg/z1xjJa+QZROdrv8waR8WPBowN+rv8BXldOK+06AAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Insurance Policy Update SLA">1b2dbd3c930b621019e5f6027cba10b6</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>cc2f93f1-7ef2-4bf1-8396-295ffc9d4fdb</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-27 17:00:43</sys_created_on>
+        <sys_id>2b2dbd3c930b621019e5f6027cba10e4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-27 17:00:43</sys_updated_on>
+        <ui_id>7f9dc8e9-7b27-4190-904e-4354b31e2626</ui_id>
+        <values>H4sIAAAAAAAA/+2XXW/bNhSG/wohYHeOJ3/IH7laFyNYgLQF4qC7KAqBIimLGyVqJJXUDfLfdyhRH7Yz1248LMFyqUMe8j3k+xzanx88Tr1zb0xn/iSKx3jqj4Yj358N5/NoNI/92XTuDwj1el6GUwYzFSNS2e87LAobeHiIZzNGWIzPhsEMn43xcH42n0zHZ/40CgI8ivwhxf2bMu/xETIp17nA609uAYiQhAuqWOadf/7S83KsYC/DlHf+sDV0qFiBIyZg6i1WK2bQTS16uwizzu03laRIWWZCXgev3QILN4KuFjACSVaV3/PYV8MyykBOjIVmPS/FGcVGqnUTUQzTj5loAwnPDCz5TmtJODZMI5MwxFLMBbrnJkEYVcL6nl3vq+bfQNxoaJeKGZwBsVp5RjgFRV4nHLojheGrdjheYIOXRhXEFKo5ackJ09VpUri0QpiLbqya8DE3XGZVisGRqLOlKNLsQ3WIXrNA5yYLDWJYbs/GFgubQ+HxMpH3N7XYS56Vp+hORUiCRfMVLxlWJLnkTNirzoo0grk9DxujeFQYKxNMIWBWu09YSrV7wUwmWHmVKc5znq3CXMk7Xm4I8tP+SsBHPxbyHvI1X2V9TGytfbg93L+E+KIMf8KK28LfwzKQ/Njz9FpfCKx1Wz6cf/hXYdVXh7Epx2aHpeFsMlE8N+9gqzvmin3sOfgG831+puPWt501WwCLkGe6UNjaYweuq87QcZQdoKqlzDrkaZWOsJ3YdTcXfagGHF+DI/mqXObwugWmTIV9RRMyTl6D1MzfROofUHoZCDVgHMzQJiv/Dg9gEh1Wpna1lZv/ACffo8OfTKJoEgXTUevDOYnpNIoneEpGre/uoaeqFKs/w7KndhAZ7ILhusVxTBygpWYC+rAoKEO/16L26XSQRFJCY8u2CQGlP1+Wp9sQMnzWC1RZExmJ4DLFGt6dRpINtq+SSbBBXCMNt9VHtxJxV1Uno4fWskBpoQ1MMzCyAd/GUzZ+udw5O7jo4kmvvAowTw9gsP8hwK2xcRIa2cGOJqq401BbgkUQzH5ZWVP1obhdHPdNPY7RA+Q275bc1e5Q1HBT2WqLxGUddBSO9lNYPUs7EHaeIf/lAvFa/G6FC57y0hAVqadHgO71FPM3bERIB4ET/N05YPPa0BcXu0qOMfT4x56VN0e/OkcP9v6HZpMNH0WntvQBu9eW/nXL09HRpg7eTP0/MXWw31Zkw0i6iP5gxHSMPQ1+QoanDK1k9sRf6e3hI3+WfF9bbfllo+wptcdYf/L2A+U/d/7pbY73WikebvZLSdenbd4HbN8072rzHTXOw4lJxZaDf7t9f936d/rM1j0JgtHkzcHP7t35PR1SJfPc1Xbi/v3lb9mDXxWHGAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Insurance Policy Update SLA">1b2dbd3c930b621019e5f6027cba10b6</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-27 17:00:43</sys_created_on>
+        <sys_id>632dbd3c930b621019e5f6027cba10e6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-27 17:00:43</sys_updated_on>
+        <ui_id>5ad15fd0-a024-4ab1-8b1d-b48d61c63415</ui_id>
+        <values>H4sIAAAAAAAA/+VYTW/bOBD9K4LOjlfyt3MrEhgIkG2AxttLtyAokYqJ0qRKUkkTw/99hyJlC7ZiW1sHSNCTweGQfDPz3pDyt1XISHgZkmk0zabT4WQcRf1+FI1G/RTHSdIfpUmU4EHYCQVeUvA0OOEUho+YF3ZcICZ0obBIrZUwnXP8/NVP3tSm0gXjRFERXn773glzrGA/Q1V4udqZOhUQxwnl4Dr3iHYAmud8M0TlnLPd1pcFn92EVMRCiToh/WWoIBQwZJhr2gmXWBBspHreWBTF5E7wrWHBhIEdQ+v8S7MXOHcSWb+MQlQpdXObIfJZcubsGht8b1SRmkJ513QhWUq1ywehGS64uarbnMNdbpgUbokL262WvFiKzy4d4WaDqihgKTSAoLkN1CL3YWT3C/n0pUI5Y6LMiZ/kMsV8M8LGKJYUxuJZhZTTJWyEljjPmXhAuZKPrFwMWJbdBw6DbsblExyq2YPo4tQC70JecXcG9uvS/BUrZqP4G7aBxQCIcWAIciXUslBlKh9RygtdTgC3tNsrXHdC/ayvONZ6GzmkHP0sLG6XBx8xckmzS1LFcvMJtnikPrh1p9LE8CAFp1vKpVIQZlHomjAADWLk3wIWk9Xq/vZTMMf6B4q7xv5ojpGiKfCu6xzX6335/J8tWsrseIyVzK7qQTYF7gW3Z7tt2sALLj6b4AZR9JEkB4e/P8W115BLwREhxeQgyciWT1oqg1wua0raF0Zrnp8AoeL5nWVmkDy/hsrTPGOUk6Z7ZWYndu6V3p95r7xLkgMgglz1mOBMlI8EAPpW7B8epF4S7/CspFftFrE2rNN9DeDAyOCltRJOgFMp4R7ODuYOTwPEqt+XlNnt9ZXRC6B/NgH0e+cRwGoT5iaRDTmv3oW2mpX/i/XHu/5AwdqCeN0ksFZnxm3P7K33BdxvpeA62dzM9SucO/MD8hVFdt6yBSxgqT8POf2iJ0YeqNmeXnkRaZ4w/9E07xmHqkKV4b3BYzQ++D2U1B6jLENLqBzL4c3snocaYUVRJgtBkH8t177foJIZU9p45/1G84WCfkQgQZiBWdCg9A423i0v4uNxVKm8yYIqEH+aDiCQoAwk2ATSLuw2TWtwxsfpuZvWDDNeVgM+hPJaOalSUr3SuI4U8gAjTuxqJ4KKzwrq99tekwQa298RrB/iq/r8rSmlOBn08Gjcj+MoiiMyjibjcTwZJdkIjwfZVqMIaZFCN4WdM6AKbI8qalR1jvb7j2upbRvNCagqCl5LYb+xe2MTWFhQ36CCdRy4byiJlJxisdNR5nBP/DXz+D1fh++uq3yI/5gKNt/NtDM15vqt3g0F+0ewnwW9sRSb0Kg3iUl6MRnH44tBRkYXU4KHF3iaDMd9QtNBds6nwPf/AGW9xNytFQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Wait For Condition">89ce8a4187120010663ca1bb36cb0be3</action_type>
+        <action_type_parent display_value="Wait For Condition">8bb9a8160b10030085c083eb37673aec</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>89ce8a4187120010663ca1bb36cb0be3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Insurance Policy Update SLA">1b2dbd3c930b621019e5f6027cba10b6</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-27 17:00:43</sys_created_on>
+        <sys_id>6b2dbd3c930b621019e5f6027cba10e5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-27 17:00:43</sys_updated_on>
+        <ui_id>1f2882a7-e616-4da3-89ef-3b6214364ec3</ui_id>
+        <values>H4sIAAAAAAAA/+2X227bOBCGXyXQtekVJUqmchfYDhrA2wC2273oFgJFkTGxtOTqkNZr5N2XlChLPjbZOgEC9Mrg8KB/fs7nkb5sLBFb1xYKKMMEQTyAjm1D2/ddSmAUuT6N7Ighq2clZMnUyozRNIvV+JHIUgc2m9nk5mpO8n9C2C/0Ty5JWC97elILY5GvJFl/NutVhC6EjDOWWNdfvvasFcnU0QXLrOvN3tRztUkSMamWThtx+2KL9UqP45SWS5YUoWiCE7NzZGau7kZqRm3ScmDPYj8KlsRM6eBE5qxnLUkSkyLN1tZ1kZUqkDES3ydyvV2xEElR57kkP3Lxr3qw6+h1nKnEqPFgOwyNP3WYj0hBZupkWpTZ1q5UUJbXlsSMk1IWw26sXnC/KkSa1FsKEslmdyrLZfKxNsTaHtC5jjJXIthK56mV12nx2SL9Pm1E3oqkcsSkKFNK5HZEiiITUVloORurFPNjZtfh43ZzIdX1h5XoME/LrDJpOh7eT0fhXzfz4YfxNJyOZ/Pp3XA+1juYZNXRS7JaieQhXGXpo6gUqnyX/QepBn0u0+8qsVw8JH1CtTl9dXWkf6vioyr8mWRCP/RPdYzarFV+SsS3kt1Vhcc5dKHvAwhtFyAY+SDAzAM28wjyHOR7vmM99ax8nQ8lyfPWY3W54bdSW1Q7brwNq+up06wqVG+mmVgVN0reIzOOPvUaKr2zlU/aQu+c2ZLZwHjIoKb1SmH7chZ/rqhhcV6V4HGFBseD2KS79+pjPWFgdM7DaCItjXUZH4ER2+8IRpPWr9O44/UujDtuizysS9KIrk59K+IciAOMIhe4EfIACjgH2MYIIEZs6jnxAEH6P4j7KWfnOwxvq5imSSx0XnmHswXJw0gVHl2w+O/Stt1Y194hdSfXXbQf8g6Dw67cYykYEA9ik2MHGBDdS3VFZNvvCcVL9cUds3dJ3LH7TYhjMfYjz8aAcYwBcgcYBNBxgO+TGEJEY26/bo+z43PVzDtvnoVYsrQsQi7JQ4c++xC05j/rZVw9Q0nD1Tip/jKNopMSDV1RmkpGkv0ep8rpj1uj1KCFXtjjzrH1jsi6WJNrnd7rcF2v34QrSglWLYuAwKUMID+iAHPKgcsij7tehKOB/QqdjJ6v4eCwVOMyI9UttkRd4JvtGToalkatgNPSDEnV3ezHJ4cHGZy83zj9Ek4Hdu99xLUTr8XUQu0bkXWuq6J+V9qjjEEy8CL9XUYAcgIISIAcEPhswBDHvkuCV6AMw7PVzQ9LOdfvfKVkl6XsGToaymatgNPSDGVtoe8CNu3EDWH+xQjDBy+DdJl0xR3jrZPVu+SOzxjJ6OJWMKnv03ydnaCxey27IHYv5m26m+NAN2YUwFi9OiLHdwB20QAMAhzZSJVe5LILcvf1P3oj1denFAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Insurance Policy Update SLA">1b2dbd3c930b621019e5f6027cba10b6</flow>
+        <generation_source/>
+        <order>11</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-27 17:00:43</sys_created_on>
+        <sys_id>6b2dbd3c930b621019e5f6027cba10e6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-27 17:00:43</sys_updated_on>
+        <ui_id>8bf317f6-0731-46fc-8a17-34fd83348ff4</ui_id>
+        <values>H4sIAAAAAAAA/+2XXW/bNhSG/4qga8eTbEu2c7U2RrAAaQskQXdRFAJFUhY3StRIKq4X5L/3UKI+bGeu3XhYguVShzzkew7fh7S/PLiMuOfuhMy8ME4maOqNR2PPm43m83g8T7zZdO75mLgDN0cZhZmSYiHN9z3ipQk8PASI+EFCvDPkjSZnExT7Z7PYJ2fxZEZCH4fjiR8Mb6q8x0fIJEwVHK0/2wUgglPGiaS5e/7l68AtkIS9NJXu+cPW0KFiOYoph6l3SC6pdm4a0dtF6HVhvonAZUZzHbEmeG0XWNgR52oBI5BkVHkDl37TNCcU5CSIKzpwM5QTpIVctxFJEfmU8y6QslzDku+UEpghTZWjU+rQDDHurJhOHeTUwoauWe+bYn+DuPHILJVQ6AE2WlmOGQFFbi8c2ZbC8FU3nCyQRrdalliXsu20YJiqupuEJqjk+qIfqyd8KjQTeZ2iUcybbMHLLP9YN9FtF+idZKlADC1Mb0yxsDkUntymYnXTiL1kedVF2xUuMOLtV3JLkcTpJaPcHHVeZjHMHbhIa8niUhuZYAoOs7p9okqq2QtmUk6ro8xQUbB8GRVS3LNqQ5CfDZccPoYJFyvIV2yZDxE2tQ7h9NDwEuKLKvwZSWYK/wDLQPLjwFVrdcGRUl350P/or9Kor5uxKcdkR5XhTDKWrNDvYKt7aot9HFj4/Pk+P5NJ59vemh2AZcRyVUpk7LED11Vv6DjKDlDVUWYc8rRKS9hO7Lqf63ysByxf/pF81S6zeN0BU7rGvqbJ0VZei9TM20TqH1B6GQi1YBzM0CYr/w4PYBIV1aa2tVWb/wQnP6LDC8M4DuNgOu58OMcJmcZJiKZ43PluBXeqzJD8M6ru1B4i/i4Y9rY4jokDtDRMwD3MS0Kd3xtR+3RaSGIh4GLLtwkBpb9cVt1tCRk96wWqrelo4cBh8jW8O60kE+xeJZ0i7TDlKDitoXMnHGar6mUMnLUonaxUGqZpGNmAb+Mpm7xc7qwdbHTxpFdeBZinBzDY/xCgztgojbToYUdSWd4rqC1FPAhmvy6NqYZQ3C6O+6Yex+gBctt3S+xqtygqOKl8uUXibRO0FI73U1g/SzsQ9p4h7+UC8Vr8boRzlrHKEDWpp0eA7PUU9TZshHEPgRP83Tlg88bQFxe7So4x9OTnnpU3R786R/t7/0PTcMNH8aktfcDujaXfb3k6PtrUwZup/yemDvbbCm8YSZXxHxTrnrHfgwdwSsmuwXsjR/4Y+bGixui3rZ6nNB5j+PDtZ8l/7vfTmxvttVIy2rwlBVmf9so+YPv2yq4331FjPZzqjG85+Le7D9edf6fPvLDDIBiHbw5+9o1drMiISFEUtrYT39pfvwMsRUo1fRgAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Insurance Policy Update SLA">1b2dbd3c930b621019e5f6027cba10b6</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>022d181a-a91c-4941-887f-b170b8f69f6f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-27 17:00:43</sys_created_on>
+        <sys_id>6f2dbd3c930b621019e5f6027cba10e1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-27 17:00:43</sys_updated_on>
+        <ui_id>29ea39a6-6954-4854-b9b3-8d2fd695cd9b</ui_id>
+        <values>H4sIAAAAAAAA/+VYTW/bOBD9K4LOjlfyt3MrEhgIkG2AxttLtyAokYqJ0qRKUkkTw/99hyJlC7ZiW1sHSNCTweGQfDPz3pDyt1XISHgZkmk0zabT4WQcRf1+FI1G/RTHSdIfpUmU4EHYCQVeUvA0OOEUho+YF3ZcICZ0obBIrZUwnXP8/NVP3tSm0gXjRFERXn773glzrGA/Q1V4udqZOhUQxwnl4Dr3iHYAmud8M0TlnLPd1pcFn92EVMRCiToh/WWoIBQwZJhr2gmXWBBspHreWBTF5E7wrWHBhIEdQ+v8S7MXOHcSWb+MQlQpdXObIfJZcubsGht8b1SRmkJ513QhWUq1ywehGS64uarbnMNdbpgUbokL262WvFiKzy4d4WaDqihgKTSAoLkN1CL3YWT3C/n0pUI5Y6LMiZ/kMsV8M8LGKJYUxuJZhZTTJWyEljjPmXhAuZKPrFwMWJbdBw6DbsblExyq2YPo4tQC70JecXcG9uvS/BUrZqP4G7aBxQCIcWAIciXUslBlKh9RygtdTgC3tNsrXHdC/ayvONZ6GzmkHP0sLG6XBx8xckmzS1LFcvMJtnikPrh1p9LE8CAFp1vKpVIQZlHomjAADWLk3wIWk9Xq/vZTMMf6B4q7xv5ojpGiKfCu6xzX6335/J8tWsrseIyVzK7qQTYF7gW3Z7tt2sALLj6b4AZR9JEkB4e/P8W115BLwREhxeQgyciWT1oqg1wua0raF0Zrnp8AoeL5nWVmkDy/hsrTPGOUk6Z7ZWYndu6V3p95r7xLkgMgglz1mOBMlI8EAPpW7B8epF4S7/CspFftFrE2rNN9DeDAyOCltRJOgFMp4R7ODuYOTwPEqt+XlNnt9ZXRC6B/NgH0e+cRwGoT5iaRDTmv3oW2mpX/i/XHu/5AwdqCeN0ksFZnxm3P7K33BdxvpeA62dzM9SucO/MD8hVFdt6yBSxgqT8POf2iJ0YeqNmeXnkRaZ4w/9E07xmHqkKV4b3BYzQ++D2U1B6jLENLqBzL4c3snocaYUVRJgtBkH8t177foJIZU9p45/1G84WCfkQgQZiBWdCg9A423i0v4uNxVKm8yYIqEH+aDiCQoAwk2ATSLuw2TWtwxsfpuZvWDDNeVgM+hPJaOalSUr3SuI4U8gAjTuxqJ4KKzwrq99tekwQa298RrB/iq/r8rSmlOBn08Gjcj+MoiiMyjibjcTwZJdkIjwfZVqMIaZFCN4WdM6AKbI8qalR1jvb7j2upbRvNCagqCl5LYb+xe2MTWFhQ36CCdRy4byiJlJxisdNR5nBP/DXz+D1fh++uq3yI/5gKNt/NtDM15vqt3g0F+0ewnwW9sRSb0Kg3iUl6MRnH44tBRkYXU4KHF3iaDMd9QtNBds6nwPf/AGW9xNytFQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="SLA Percentage Timer">a1a50c4573873300d70877186bf6a762</action_type>
+        <action_type_parent display_value="SLA Percentage Timer">6f0ebf3c73833300d70877186bf6a729</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>a1a50c4573873300d70877186bf6a762</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Insurance Policy Update SLA">1b2dbd3c930b621019e5f6027cba10b6</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-27 17:00:43</sys_created_on>
+        <sys_id>eb2dbd3c930b621019e5f6027cba10e0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-27 17:00:43</sys_updated_on>
+        <ui_id>4c3e2a6b-594b-46a3-bcd6-1c011bf35f69</ui_id>
+        <values>H4sIAAAAAAAA/+1bbW/iOBD+K5XVj4hLeSkt33pbIe2qtz2Var9sTpFJHPDWJDnHoWUR/33Hjh0SAhQo3V3YSFXbjO3JzDPPOIOHfJ0h6qEualzjtuW22p3mVafZtCyvY111OhdXlwP/EncuW6iGAjwmMDMi3CWBwEMCsglmiRS2LbjwaBwxPP2Sl7kjyjxOAtT9+l8NRZiDEkE46s6Whra1guEBYTD137wZq0wT00jKaCDIEG6YCu706o+ZNOSeNOeihsiLIIFHwA4fs5jU0BgHHhYhn6Ku4AkIOMHefcCm2YwRaAdtSM59iel3uGHLkvN8Ao65JB3LLh2NUCr2b7HAfdDsioTrqe4opC6JU0g84uOEiQ95WTrhPhI0DNIlAg+YWR2yZBx8TsFAmQITEJAkMRhBIumntFy74fdH4fODsbJHAwWJHmShi1l2hYXgdJAIac8MJfRxGeUxDRzDCkmAdEoZd8LIGGxwxjiKaDB0Ih5OqLovuDGuDxlc1H0WPoO9MR0GdexKn+sQEVzvgfxWib9gTiUA/4AaWDyvoXgaf2A4jhcwAP7O/4l0IgVFu++kCMolLqeRuIEbTIj2dF7TiYG9jZS8XrBP4PjJiRl2OHGBVbnsKOfGzpmxhRkmMx7BjrP+3c3Zg7FjrYE6RxZ8LWbJQ06u86SxOU+0ZJtEaTaKiWKsW5MwxqtjTRy/TzB3Rz1KmIxn6uiabMrHY0JjCnY6kFa+XKjUlfIqHymfh2NHZQ4NokTEKyN/LOnX2Mz73OYv3ct7vUi/mY0mhMdgvo26NrqoWzaq2dLPiJGX+8E34goYgWlewrFI58HVuTsx/6iF3/AE1xkOhnUgH4CmtJxP1JiN5nO44oRh6YZjNDnPIX+KnTeopDFELcKU765BQanVZAbJBN/bGIn1fovl6pgAWxj9rgzphXyMhRr/1L//XA5J3x2RMU5vsmAc4d3eresNPMtzGwO305CssOB60PKa8Ld11b7ApWjaKGeVkdfPfZmNjo9dIuJ0TZ9KC4DOPSlUK2e2befTTV525S+t0pZKbVttehBoNs0mpPibcbkHZkOZNFWcyeOiTr0RpU/U8mJWsCfz1wxnG/Mai9Seno01cuteHEaCoRhlg001Ooef11hegHr9zFMDfwMm+4WjtXU48juEjf4OQ0ZwoODPRt6K9iPUv3/1CtYeBPGBNnYz5EXFRdwXzu8Hc3trmJd30JV7iho8NW4XPd8P5+bWOOtnTAFeKTs1VJWf+4F5sR2YEs0dn5z1cxnjvTHWxZSxzg0VZRzjqpqzxePbrF9XpWa69q9VD8uDsOj3TjxYKlz3pYRlbSJFy7q+zGgxL38grWrkqkauauSqRn5X8KsauaqRqxq5qpGrGrmqkY+hRs71YWbmmNnkOVrq2ai8U9EH7Ban+eaAPk0sedq9sSm04ijcCEEnrJaNNh5gdkeDp1V9pITepkp1KyFNPt3XcVjRGt1byvWOct6V/RUrVN4ta3z3PtEbGqpv7AFpyW0paoftqh60iaKjuL7yOk0eb/R3G0x24Xqr4vrvxPWs2s21AE3XdBeqL+r5n093XfMv8z1nUpnzeb9XQCFWaV7ha0br9qnR2pDgiLld+JRxmlv3sotrPN9lg26eGpOPm8Tqz0lyV3tW9HMXpr7yNcSKqT+DqRu+jlcRtSLqLyHqqRCvOmCoCPhbELAqLysqVodUFUl/GUmr46UTI+QRHC9l79m9/lZFtnvd3ZzJ/uDZR/Naxdr3LTQF0j7fEgPujfDgz8zLtmX9Se/cbfdCUIZ3vr0M8tcby2jlG0TlaL/PG0TGjwWPDvi5/gd2llXK7ToAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=1b2dbd3c930b621019e5f6027cba10b6"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=1b2dbd3c930b621019e5f6027cba10b6^sys_idNOT IN6f2dbd3c930b621019e5f6027cba10de,ef2dbd3c930b621019e5f6027cba10df"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">4a2d7d3c930b621019e5f6027cba10c0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Insurance Policy Update SLA">1b2dbd3c930b621019e5f6027cba10b6</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-27 17:00:43</sys_created_on>
+        <sys_id>6f2dbd3c930b621019e5f6027cba10de</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-27 17:00:43</sys_updated_on>
+        <ui_id>022d181a-a91c-4941-887f-b170b8f69f6f</ui_id>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0PPjvFHbJa8lZTCoFthLX3ZirmW5ERMljxLSpqZ/Pdd2Y4T1oytdI97s450r845ugd3RDvbOGse9JUxYq3I8stTQITyGH53REHNyZJQrZiwQquiBwKyBen8Bn4yYRoJ+8cTQjdCspaP3Rposcbyliy7X7YEw4Iqgipe0JimSZ4mUZS8n8dlnpZxwlLgkGJDCSWXeHR1pPHutkeC3/Kz+8bjxrZCrcf17djl/gjqlnlWcRQQ/my5Yhz5VCAND0gNioHV7X5CWg7sTskTsBHKDoJreDbiB16YZJk/WHGUSEc3pmUxOjXA1TVYQCqOWtdOxmlBuRnMYbwCJ+3qHBsO3DVe6lBioZTHai1drT4NjpCpwdnDOIMkeOOVeuqjjup+o3efjyxvhOpdGTelpiCnFVj0rnTW8+kIl7zGRkUNTYOOFk2rt6IvRi51uJa4CCupd3ipn64QqCceorEQ3iB+3cOP0Aqv4iO2weKBZglG0KKfRGyHNnFyCIjZm5UEY04i0d3iu/MUB8mjuGLwx5fQVjT2Cm/e8lHHIXg52Gcz3XVzmvIE8nKWLeblbJ5DOispy2cxjeK4rNKsyhehsWCdORy+uihKGQpuJE45e5mIN/d7XZ4WkFVZHGWX8zTPL+XpQpJeGaLkDyHyL/iXGYqi6H+I3hwiYYph9Edt/eX/MENPPjDDnZPXVBik9uCxD8d/iN/Y43AJeg7tdPvNizphh58KjkP3jQYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">822d7d3c930b621019e5f6027cba10c5</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Insurance Policy Update SLA">1b2dbd3c930b621019e5f6027cba10b6</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-27 17:00:43</sys_created_on>
+        <sys_id>ef2dbd3c930b621019e5f6027cba10df</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-27 17:00:43</sys_updated_on>
+        <ui_id>cc2f93f1-7ef2-4bf1-8396-295ffc9d4fdb</ui_id>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0PPjvFHbJa8lZTCoFthLX3ZirmW5ERMljxLSpqZ/Pdd2Y4T1oytdI97s450r845ugd3RDvbOGse9JUxYq3I8stTQITyGH53REHNyZJQrZiwQquiBwKyBen8Bn4yYRoJ+8cTQjdCspaP3Rposcbyliy7X7YEw4Iqgipe0JimSZ4mUZS8n8dlnpZxwlLgkGJDCSWXeHR1pPHutkeC3/Kz+8bjxrZCrcf17djl/gjqlnlWcRQQ/my5Yhz5VCAND0gNioHV7X5CWg7sTskTsBHKDoJreDbiB16YZJk/WHGUSEc3pmUxOjXA1TVYQCqOWtdOxmlBuRnMYbwCJ+3qHBsO3DVe6lBioZTHai1drT4NjpCpwdnDOIMkeOOVeuqjjup+o3efjyxvhOpdGTelpiCnFVj0rnTW8+kIl7zGRkUNTYOOFk2rt6IvRi51uJa4CCupd3ipn64QqCceorEQ3iB+3cOP0Aqv4iO2weKBZglG0KKfRGyHNnFyCIjZm5UEY04i0d3iu/MUB8mjuGLwx5fQVjT2Cm/e8lHHIXg52Gcz3XVzmvIE8nKWLeblbJ5DOispy2cxjeK4rNKsyhehsWCdORy+uihKGQpuJE45e5mIN/d7XZ4WkFVZHGWX8zTPL+XpQpJeGaLkDyHyL/iXGYqi6H+I3hwiYYph9Edt/eX/MENPPjDDnZPXVBik9uCxD8d/iN/Y43AJeg7tdPvNizphh58KjkP3jQYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=1b2dbd3c930b621019e5f6027cba10b6"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=1b2dbd3c930b621019e5f6027cba10b6"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_1b2dbd3c930b621019e5f6027cba10b6^sys_idNOT IN9b2dbd3c930b621019e5f6027cba10c4,a32dbd3c930b621019e5f6027cba10cb"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>sla_flow_inputs</element>
+        <help/>
+        <hint/>
+        <label>sla_flow_inputs</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_1b2dbd3c930b621019e5f6027cba10b6</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-27 17:00:42</sys_created_on>
+        <sys_id>9b2dbd3c930b621019e5f6027cba10c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Healthcare Management " source="eb49735f471222104bebe454116d43bf">eb49735f471222104bebe454116d43bf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-27 17:00:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>task_sla_record</element>
+        <help/>
+        <hint/>
+        <label>task_sla_record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_1b2dbd3c930b621019e5f6027cba10b6</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-27 17:00:42</sys_created_on>
+        <sys_id>a32dbd3c930b621019e5f6027cba10cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Healthcare Management " source="eb49735f471222104bebe454116d43bf">eb49735f471222104bebe454116d43bf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-27 17:00:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_1b2dbd3c930b621019e5f6027cba10b6"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_1b2dbd3c930b621019e5f6027cba10b6"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_1b2dbd3c930b621019e5f6027cba10b6"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>6e4b39b8930b621019e5f6027cba10b0</sys_id>
+        <latest_snapshot>1b2dbd3c930b621019e5f6027cba10b6</latest_snapshot>
+        <compiler_build>glide-xanadu-07-02-2024__patch9-05-21-2025_06-04-2025_0434.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=6e4b39b8930b621019e5f6027cba10b0^sys_idNOT INa32dfd3c930b621019e5f6027cba100e"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"a32dfd3c930b621019e5f6027cba100e","name":"plan","plan_signature":null}}</plan>
+        <plan_id>6e4b39b8930b621019e5f6027cba10b0</plan_id>
+        <snapshot>6b8df57c930b621019e5f6027cba1090</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-27 17:00:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a32dfd3c930b621019e5f6027cba100e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-27 17:00:43</sys_updated_on>
+        <trigger display_value="sla_task">eb2dfd3c930b621019e5f6027cba100d</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=6e4b39b8930b621019e5f6027cba10b0"/>
+</record_update>
