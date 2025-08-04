@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="DELETE">
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>Healthcare Home - Container 2</name>
+        <order>2</order>
+        <semantic_tag/>
+        <sp_page display_value="healthcare_home">02e0d88f934bea1019e5f6027cba10d7</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-03 08:56:45</sys_created_on>
+        <sys_id>aa8114cf934bea1019e5f6027cba10db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Healthcare Home - Container 2</sys_name>
+        <sys_package display_value="Healthcare Management " source="eb49735f471222104bebe454116d43bf">eb49735f471222104bebe454116d43bf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_update_name>sp_container_aa8114cf934bea1019e5f6027cba10db</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-03 08:56:45</sys_updated_on>
+        <title/>
+        <width>container</width>
+    </sp_container>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</application>
+        <file_path/>
+        <instance_id>baf363623b58e250986d048aa4e45a47</instance_id>
+        <instance_name>dev301620</instance_name>
+        <name>sp_container_aa8114cf934bea1019e5f6027cba10db</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>Healthcare Home - Container 2</name><order>2</order><semantic_tag/><sp_page display_value="healthcare_home">02e0d88f934bea1019e5f6027cba10d7</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-08-03 08:56:45</sys_created_on><sys_id>aa8114cf934bea1019e5f6027cba10db</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Healthcare Home - Container 2</sys_name><sys_package display_value="Healthcare Management " source="eb49735f471222104bebe454116d43bf">eb49735f471222104bebe454116d43bf</sys_package><sys_policy/><sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope><sys_update_name>sp_container_aa8114cf934bea1019e5f6027cba10db</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-08-03 08:56:45</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+        <payload_hash>-2054773196</payload_hash>
+        <record_name>Healthcare Home - Container 2</record_name>
+        <reverted_from/>
+        <source>e4cd107f93f2221019e5f6027cba103f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-03 08:56:45</sys_created_on>
+        <sys_id>aa8114cf934bea1019e5f6027cba10dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1986f25cf620000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-03 08:56:45</sys_updated_on>
+        <type>Container</type>
+        <update_guid>ae8114cff04bea10fedac345a6ba26dc</update_guid>
+        <update_guid_history>ae8114cff04bea10fedac345a6ba26dc:-2054773196</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Healthcare Home - Container 2">1622d003938bea1019e5f6027cba10ec</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-03 08:59:29</sys_created_on>
+        <sys_db_object display_value="" name="sp_container">sp_container</sys_db_object>
+        <sys_id>0597b31725b6470180636ba03682d4a9</sys_id>
+        <sys_metadata>aa8114cf934bea1019e5f6027cba10db</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Healthcare Home - Container 2</sys_name>
+        <sys_package display_value="Healthcare Management " source="eb49735f471222104bebe454116d43bf">eb49735f471222104bebe454116d43bf</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_scope_delete display_value="">777693b6033f4472835f22a0c4fb6961</sys_scope_delete>
+        <sys_update_name>sp_container_aa8114cf934bea1019e5f6027cba10db</sys_update_name>
+        <sys_update_version display_value="sp_container_aa8114cf934bea1019e5f6027cba10db">aa8114cf934bea1019e5f6027cba10dd</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-03 08:59:29</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css">
+    <sp_css action="DELETE">
+        <css>/* === Container Grid for All Tiles === */&#13;
+.tile-grid {&#13;
+  display: grid;&#13;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));&#13;
+  gap: 20px;&#13;
+  padding: 20px;&#13;
+}&#13;
+&#13;
+/* === Common Styles for All Tiles === */&#13;
+[class^="tile-"] {&#13;
+  display: flex;&#13;
+  flex-direction: column;&#13;
+  justify-content: center;     /* vertical centering */&#13;
+  align-items: center;         /* horizontal centering */&#13;
+  text-align: center;&#13;
+  height: 150px;&#13;
+  padding: 20px;&#13;
+  border-radius: 12px;&#13;
+  color: #fff;&#13;
+  font-size: 18px;&#13;
+  font-weight: 600;&#13;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;&#13;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);&#13;
+  cursor: pointer;&#13;
+}&#13;
+&#13;
+/* === Specific Tile Colors === */&#13;
+.tile-appointment {&#13;
+  background-color: #00796B; /* Teal */&#13;
+}&#13;
+&#13;
+.tile-lab {&#13;
+  background-color: #3949AB; /* Indigo */&#13;
+}&#13;
+&#13;
+.tile-medication {&#13;
+  background-color: #C2185B; /* Pink */&#13;
+}&#13;
+&#13;
+.tile-insurance {&#13;
+  background-color: #FFA000; /* Amber */&#13;
+}&#13;
+&#13;
+/* === Hover Effects === */&#13;
+[class^="tile-"]:hover {&#13;
+  transform: scale(1.05);&#13;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);&#13;
+}&#13;
+&#13;
+/* === Responsive Text === */&#13;
+[class^="tile-"] h3 {&#13;
+  margin: 0;&#13;
+  font-size: 20px;&#13;
+  font-weight: bold;&#13;
+}&#13;
+</css>
+        <name>Healthcare_Tiles_Style</name>
+        <sys_class_name>sp_css</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-03 14:01:33</sys_created_on>
+        <sys_id>ab27ddc393cfea1019e5f6027cba10a1</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Healthcare_Tiles_Style</sys_name>
+        <sys_package display_value="Healthcare Management " source="eb49735f471222104bebe454116d43bf">eb49735f471222104bebe454116d43bf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_update_name>sp_css_ab27ddc393cfea1019e5f6027cba10a1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-03 14:25:54</sys_updated_on>
+        <turn_off_scss_compilation>false</turn_off_scss_compilation>
+    </sp_css>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</application>
+        <file_path/>
+        <instance_id>baf363623b58e250986d048aa4e45a47</instance_id>
+        <instance_name>dev301620</instance_name>
+        <name>sp_css_ab27ddc393cfea1019e5f6027cba10a1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css"><sp_css action="INSERT_OR_UPDATE"><css>/* === Container Grid for All Tiles === */&#13;
+.tile-grid {&#13;
+  display: grid;&#13;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));&#13;
+  gap: 20px;&#13;
+  padding: 20px;&#13;
+}&#13;
+&#13;
+/* === Common Styles for All Tiles === */&#13;
+[class^="tile-"] {&#13;
+  display: flex;&#13;
+  flex-direction: column;&#13;
+  justify-content: center;     /* vertical centering */&#13;
+  align-items: center;         /* horizontal centering */&#13;
+  text-align: center;&#13;
+  height: 150px;&#13;
+  padding: 20px;&#13;
+  border-radius: 12px;&#13;
+  color: #fff;&#13;
+  font-size: 18px;&#13;
+  font-weight: 600;&#13;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;&#13;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);&#13;
+  cursor: pointer;&#13;
+}&#13;
+&#13;
+/* === Specific Tile Colors === */&#13;
+.tile-appointment {&#13;
+  background-color: #00796B; /* Teal */&#13;
+}&#13;
+&#13;
+.tile-lab {&#13;
+  background-color: #3949AB; /* Indigo */&#13;
+}&#13;
+&#13;
+.tile-medication {&#13;
+  background-color: #C2185B; /* Pink */&#13;
+}&#13;
+&#13;
+.tile-insurance {&#13;
+  background-color: #FFA000; /* Amber */&#13;
+}&#13;
+&#13;
+/* === Hover Effects === */&#13;
+[class^="tile-"]:hover {&#13;
+  transform: scale(1.05);&#13;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);&#13;
+}&#13;
+&#13;
+/* === Responsive Text === */&#13;
+[class^="tile-"] h3 {&#13;
+  margin: 0;&#13;
+  font-size: 20px;&#13;
+  font-weight: bold;&#13;
+}&#13;
+</css><name>Healthcare_Tiles_Style</name><sys_class_name>sp_css</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-08-03 14:01:33</sys_created_on><sys_id>ab27ddc393cfea1019e5f6027cba10a1</sys_id><sys_mod_count>6</sys_mod_count><sys_name>Healthcare_Tiles_Style</sys_name><sys_package display_value="Healthcare Management " source="eb49735f471222104bebe454116d43bf">eb49735f471222104bebe454116d43bf</sys_package><sys_policy/><sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope><sys_update_name>sp_css_ab27ddc393cfea1019e5f6027cba10a1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-08-03 14:25:54</sys_updated_on><turn_off_scss_compilation>false</turn_off_scss_compilation></sp_css></record_update>]]></payload>
+        <payload_hash>1531504018</payload_hash>
+        <record_name>Healthcare_Tiles_Style</record_name>
+        <reverted_from/>
+        <source>e4cd107f93f2221019e5f6027cba103f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-03 14:25:54</sys_created_on>
+        <sys_id>8cecd98b93cfea1019e5f6027cba10d1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>198705326a00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-03 14:25:54</sys_updated_on>
+        <type>Style Sheet</type>
+        <update_guid>04ecd98b2ecfea10ece022c55675e4d1</update_guid>
+        <update_guid_history>04ecd98b2ecfea10ece022c55675e4d1:1531504018,3e2a15c73acfea10a2be7bbcf27fd443:1109265709,ff991187c8cfea102516d32036b9d846:320141046,5f699d8725cfea101e670ade272b8a09:-43985390,a1189147d1cfea105bb9f7bc0e553000:681763081,d6c755c3f7cfea10f950193ec21aad8f:-43985390,134791071fcfea104643fc0fae648e51:-1524716109</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Healthcare_Tiles_Style">b87e190f93cfea1019e5f6027cba1025</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-03 14:32:47</sys_created_on>
+        <sys_db_object display_value="" name="sp_css">sp_css</sys_db_object>
+        <sys_id>95bdfa0ebe9a4aadac0ce6ee33f67081</sys_id>
+        <sys_metadata>ab27ddc393cfea1019e5f6027cba10a1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Healthcare_Tiles_Style</sys_name>
+        <sys_package display_value="Healthcare Management " source="eb49735f471222104bebe454116d43bf">eb49735f471222104bebe454116d43bf</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_scope_delete display_value="">777693b6033f4472835f22a0c4fb6961</sys_scope_delete>
+        <sys_update_name>sp_css_ab27ddc393cfea1019e5f6027cba10a1</sys_update_name>
+        <sys_update_version display_value="sp_css_ab27ddc393cfea1019e5f6027cba10a1">8cecd98b93cfea1019e5f6027cba10d1</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-03 14:32:47</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

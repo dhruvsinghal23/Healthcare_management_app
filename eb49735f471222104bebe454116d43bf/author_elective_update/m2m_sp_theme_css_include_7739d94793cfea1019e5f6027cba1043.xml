@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_theme_css_include">
+    <m2m_sp_theme_css_include action="DELETE">
+        <order>5</order>
+        <sp_css_include display_value="Healthcare_Tiles_Style">934791c393cfea1019e5f6027cba10ff</sp_css_include>
+        <sp_theme display_value="La Jolla">a7a6e78277002300a6e592718a10617a</sp_theme>
+        <sys_class_name>m2m_sp_theme_css_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-03 14:10:03</sys_created_on>
+        <sys_id>7739d94793cfea1019e5f6027cba1043</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Healthcare_Tiles_Style.La Jolla</sys_name>
+        <sys_package display_value="Healthcare Management " source="eb49735f471222104bebe454116d43bf">eb49735f471222104bebe454116d43bf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_update_name>m2m_sp_theme_css_include_7739d94793cfea1019e5f6027cba1043</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-03 14:14:42</sys_updated_on>
+    </m2m_sp_theme_css_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</application>
+        <file_path/>
+        <instance_id>baf363623b58e250986d048aa4e45a47</instance_id>
+        <instance_name>dev301620</instance_name>
+        <name>m2m_sp_theme_css_include_7739d94793cfea1019e5f6027cba1043</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_theme_css_include"><m2m_sp_theme_css_include action="INSERT_OR_UPDATE"><order>5</order><sp_css_include display_value="Healthcare_Tiles_Style">934791c393cfea1019e5f6027cba10ff</sp_css_include><sp_theme display_value="La Jolla">a7a6e78277002300a6e592718a10617a</sp_theme><sys_class_name>m2m_sp_theme_css_include</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-08-03 14:10:03</sys_created_on><sys_id>7739d94793cfea1019e5f6027cba1043</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Healthcare_Tiles_Style.La Jolla</sys_name><sys_package display_value="Healthcare Management " source="eb49735f471222104bebe454116d43bf">eb49735f471222104bebe454116d43bf</sys_package><sys_policy/><sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope><sys_update_name>m2m_sp_theme_css_include_7739d94793cfea1019e5f6027cba1043</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-08-03 14:14:42</sys_updated_on></m2m_sp_theme_css_include></record_update>]]></payload>
+        <payload_hash>2026994445</payload_hash>
+        <record_name>Healthcare_Tiles_Style.La Jolla</record_name>
+        <reverted_from/>
+        <source>e4cd107f93f2221019e5f6027cba103f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-03 14:14:42</sys_created_on>
+        <sys_id>485a998793cfea1019e5f6027cba1055</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1987048e8160000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-03 14:14:42</sys_updated_on>
+        <type>Stylesheets</type>
+        <update_guid>cc5a998725cfea1062d59623c2c98254</update_guid>
+        <update_guid_history>cc5a998725cfea1062d59623c2c98254:2026994445,7b39d94732cfea10dbc4f594e3098f45:-858223016</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Healthcare_Tiles_Style.La Jolla">747e514f93cfea1019e5f6027cba1098</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-03 14:32:47</sys_created_on>
+        <sys_db_object display_value="" name="m2m_sp_theme_css_include">m2m_sp_theme_css_include</sys_db_object>
+        <sys_id>211f79c9782148e0ba58244e1cc01951</sys_id>
+        <sys_metadata>7739d94793cfea1019e5f6027cba1043</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Healthcare_Tiles_Style.La Jolla</sys_name>
+        <sys_package display_value="Healthcare Management " source="eb49735f471222104bebe454116d43bf">eb49735f471222104bebe454116d43bf</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_scope_delete display_value="">777693b6033f4472835f22a0c4fb6961</sys_scope_delete>
+        <sys_update_name>m2m_sp_theme_css_include_7739d94793cfea1019e5f6027cba1043</sys_update_name>
+        <sys_update_version display_value="m2m_sp_theme_css_include_7739d94793cfea1019e5f6027cba1043">485a998793cfea1019e5f6027cba1055</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-03 14:32:47</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

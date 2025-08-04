@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>global.FetchBillingDetails</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>FetchBillingDetails</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var FetchBillingDetails = Class.create();
+FetchBillingDetails.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    getBillingInfo: function() {
+        var billingId = this.getParameter('sysparm_billing_id');
+
+		var billGr = new GlideRecord('u_billing');
+		if(!billGr.get(billingId))
+		{
+			return new global.JSON().encode({
+				success:false,
+				error:'No Billing Record Found'
+			});
+		}
+		return new global.JSON().encode({
+			success:true,
+			amount_due: billGr.getValue('u_total_amount'),
+			appointment_id: billGr.getDisplayValue('u_appointment_id'),
+			patient_id:billGr.getDisplayValue('u_patient_id'),
+			status: billGr.getDisplayValue('u_status')
+		});
+
+    },
+    type: 'FetchBillingDetails'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 05:25:04</sys_created_on>
+        <sys_id>4848e09b9303221019e5f6027cba108f</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>FetchBillingDetails</sys_name>
+        <sys_package display_value="Healthcare Management " source="eb49735f471222104bebe454116d43bf">eb49735f471222104bebe454116d43bf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_update_name>sys_script_include_4848e09b9303221019e5f6027cba108f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 06:05:27</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>4848e09b9303221019e5f6027cba108f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 05:25:03</sys_created_on>
+        <sys_id>9baa249b9303221019e5f6027cba10df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 05:25:03</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

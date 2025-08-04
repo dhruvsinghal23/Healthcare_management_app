@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Medication Refill Request">59ac4d3c9307621019e5f6027cba104e</sc_cat_item>
+        <sc_category display_value="Healthcare">9a8fec749383621019e5f6027cba10ab</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-27 13:50:53</sys_created_on>
+        <sys_id>fab151749347621019e5f6027cba1086</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Healthcare.Medication Refill Request</sys_name>
+        <sys_package display_value="Healthcare Management " source="eb49735f471222104bebe454116d43bf">eb49735f471222104bebe454116d43bf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_update_name>sc_cat_item_category_fab151749347621019e5f6027cba1086</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-27 13:50:53</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</application>
+        <file_path/>
+        <instance_id>baf363623b58e250986d048aa4e45a47</instance_id>
+        <instance_name>dev301620</instance_name>
+        <name>sc_cat_item_category_fab151749347621019e5f6027cba1086</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Medication Refill Request">59ac4d3c9307621019e5f6027cba104e</sc_cat_item><sc_category display_value="Healthcare">9a8fec749383621019e5f6027cba10ab</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-27 13:50:53</sys_created_on><sys_id>fab151749347621019e5f6027cba1086</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Healthcare.Medication Refill Request</sys_name><sys_package display_value="Healthcare Management " source="eb49735f471222104bebe454116d43bf">eb49735f471222104bebe454116d43bf</sys_package><sys_policy/><sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope><sys_update_name>sc_cat_item_category_fab151749347621019e5f6027cba1086</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-27 13:50:53</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>-1570988342</payload_hash>
+        <record_name>Healthcare.Medication Refill Request</record_name>
+        <reverted_from/>
+        <source>a334be439332221019e5f6027cba1012</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-27 13:50:53</sys_created_on>
+        <sys_id>f2b151749347621019e5f6027cba10a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1984c2693200000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-27 13:50:53</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>f6b151747a47621010ba61c9aabd27a2</update_guid>
+        <update_guid_history>f6b151747a47621010ba61c9aabd27a2:-1570988342</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Healthcare.Medication Refill Request">9fc841da93472a1019e5f6027cba102b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-01 05:02:45</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>9255d137dff44eb4a0742931ba184a44</sys_id>
+        <sys_metadata>fab151749347621019e5f6027cba1086</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Healthcare.Medication Refill Request</sys_name>
+        <sys_package display_value="Healthcare Management " source="eb49735f471222104bebe454116d43bf">eb49735f471222104bebe454116d43bf</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_scope_delete display_value="">777693b6033f4472835f22a0c4fb6961</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_fab151749347621019e5f6027cba1086</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_fab151749347621019e5f6027cba1086">f2b151749347621019e5f6027cba10a3</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-01 05:02:45</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" db_object_id="0f8b3b53475222104bebe454116d4385" extends="task" label="Billing" max_length="40" name="u_billing" type="collection">
+        <element attributes="encode_utf8=false" label="Appointment Id" max_length="32" name="u_appointment_id" reference="u_appointment" type="reference"/>
         <element label="Reminder" max_length="40" name="u_reminder" type="boolean"/>
     </element>
 </database>

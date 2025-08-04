@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_category">
+    <sc_category action="DELETE">
+        <active>true</active>
+        <description/>
+        <entitlement_script/>
+        <header_icon/>
+        <homepage_image/>
+        <homepage_renderer display_value="Category Items">47ebe8aa3742300054b6a3549dbe5dfa</homepage_renderer>
+        <icon/>
+        <image/>
+        <location/>
+        <mobile_hide_description>false</mobile_hide_description>
+        <mobile_picture/>
+        <mobile_subcategory_render_type>list</mobile_subcategory_render_type>
+        <module/>
+        <order>0</order>
+        <parent/>
+        <roles/>
+        <sc_catalog display_value="Healthcare Services">1cc29a0a93322210e8bcf1d97bba10c8</sc_catalog>
+        <sys_class_name>sc_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-27 11:56:29</sys_created_on>
+        <sys_id>e187743093c3621019e5f6027cba10fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Medication</sys_name>
+        <sys_package display_value="Healthcare Management " source="eb49735f471222104bebe454116d43bf">eb49735f471222104bebe454116d43bf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_update_name>sc_category_e187743093c3621019e5f6027cba10fe</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-27 11:56:29</sys_updated_on>
+        <title>Medication</title>
+    </sc_category>
+    <sys_translated_text action="DELETE" query="documentkey=e187743093c3621019e5f6027cba10fe"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</application>
+        <file_path/>
+        <instance_id>baf363623b58e250986d048aa4e45a47</instance_id>
+        <instance_name>dev301620</instance_name>
+        <name>sc_category_e187743093c3621019e5f6027cba10fe</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_category"><sc_category action="INSERT_OR_UPDATE"><active>true</active><description/><entitlement_script/><header_icon/><homepage_image/><homepage_renderer display_value="Category Items">47ebe8aa3742300054b6a3549dbe5dfa</homepage_renderer><icon/><image/><location/><mobile_hide_description>false</mobile_hide_description><mobile_picture/><mobile_subcategory_render_type>list</mobile_subcategory_render_type><module/><order>0</order><parent/><roles/><sc_catalog display_value="Healthcare Services">1cc29a0a93322210e8bcf1d97bba10c8</sc_catalog><sys_class_name>sc_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-27 11:56:29</sys_created_on><sys_id>e187743093c3621019e5f6027cba10fe</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Medication</sys_name><sys_package display_value="Healthcare Management " source="eb49735f471222104bebe454116d43bf">eb49735f471222104bebe454116d43bf</sys_package><sys_policy/><sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope><sys_update_name>sc_category_e187743093c3621019e5f6027cba10fe</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-27 11:56:29</sys_updated_on><title>Medication</title></sc_category><sys_translated_text action="delete_multiple" query="documentkey=e187743093c3621019e5f6027cba10fe"/></record_update>]]></payload>
+        <payload_hash>2081432488</payload_hash>
+        <record_name>Medication</record_name>
+        <reverted_from/>
+        <source>e4cd107f93f2221019e5f6027cba103f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-27 11:56:29</sys_created_on>
+        <sys_id>cf87b43093c3621019e5f6027cba10cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1984bbdd84d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-27 11:56:29</sys_updated_on>
+        <type>Category</type>
+        <update_guid>c387b430b2c36210f118fafae65256cc</update_guid>
+        <update_guid_history>c387b430b2c36210f118fafae65256cc:2081432488</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Medication">94b9819e93472a1019e5f6027cba101b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-01 05:06:39</sys_created_on>
+        <sys_db_object display_value="" name="sc_category">sc_category</sys_db_object>
+        <sys_id>1b208967198d46789429bf9d788d7a90</sys_id>
+        <sys_metadata>e187743093c3621019e5f6027cba10fe</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Medication</sys_name>
+        <sys_package display_value="Healthcare Management " source="eb49735f471222104bebe454116d43bf">eb49735f471222104bebe454116d43bf</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_scope_delete display_value="">777693b6033f4472835f22a0c4fb6961</sys_scope_delete>
+        <sys_update_name>sc_category_e187743093c3621019e5f6027cba10fe</sys_update_name>
+        <sys_update_version display_value="sc_category_e187743093c3621019e5f6027cba10fe">cf87b43093c3621019e5f6027cba10cc</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-01 05:06:39</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

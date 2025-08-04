@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css_include">
+    <sp_css_include action="DELETE">
+        <lazy_load>false</lazy_load>
+        <name>Healthcare_Tiles_Style</name>
+        <rtl_css_file_url/>
+        <source>local</source>
+        <sp_css display_value="Healthcare_Tiles_Style">ab27ddc393cfea1019e5f6027cba10a1</sp_css>
+        <sys_class_name>sp_css_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-03 14:01:33</sys_created_on>
+        <sys_id>934791c393cfea1019e5f6027cba10ff</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Healthcare_Tiles_Style</sys_name>
+        <sys_package display_value="Healthcare Management " source="eb49735f471222104bebe454116d43bf">eb49735f471222104bebe454116d43bf</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_update_name>sp_css_include_934791c393cfea1019e5f6027cba10ff</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-03 14:03:40</sys_updated_on>
+        <url/>
+    </sp_css_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</application>
+        <file_path/>
+        <instance_id>baf363623b58e250986d048aa4e45a47</instance_id>
+        <instance_name>dev301620</instance_name>
+        <name>sp_css_include_934791c393cfea1019e5f6027cba10ff</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css_include"><sp_css_include action="INSERT_OR_UPDATE"><lazy_load>false</lazy_load><name>Healthcare_Tiles_Style</name><rtl_css_file_url/><source>local</source><sp_css display_value="Healthcare_Tiles_Style">ab27ddc393cfea1019e5f6027cba10a1</sp_css><sys_class_name>sp_css_include</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-08-03 14:01:33</sys_created_on><sys_id>934791c393cfea1019e5f6027cba10ff</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Healthcare_Tiles_Style</sys_name><sys_package display_value="Healthcare Management " source="eb49735f471222104bebe454116d43bf">eb49735f471222104bebe454116d43bf</sys_package><sys_policy/><sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope><sys_update_name>sp_css_include_934791c393cfea1019e5f6027cba10ff</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-08-03 14:03:40</sys_updated_on><url/></sp_css_include></record_update>]]></payload>
+        <payload_hash>1307703925</payload_hash>
+        <record_name>Healthcare_Tiles_Style</record_name>
+        <reverted_from/>
+        <source>e4cd107f93f2221019e5f6027cba103f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-03 14:03:40</sys_created_on>
+        <sys_id>d6c755c393cfea1019e5f6027cba108e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>198703ece0b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-03 14:03:40</sys_updated_on>
+        <type>CSS Include</type>
+        <update_guid>5ec755c3eccfea10ddef62b065ee668d</update_guid>
+        <update_guid_history>5ec755c3eccfea10ddef62b065ee668d:1307703925,d347910722cfea10e3f83b9a6f2b114f:494012668</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Healthcare_Tiles_Style">b47e514f93cfea1019e5f6027cba1095</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-03 14:32:47</sys_created_on>
+        <sys_db_object display_value="" name="sp_css_include">sp_css_include</sys_db_object>
+        <sys_id>3aa6f0192fb2453493b919ef4e93fce9</sys_id>
+        <sys_metadata>934791c393cfea1019e5f6027cba10ff</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Healthcare_Tiles_Style</sys_name>
+        <sys_package display_value="Healthcare Management " source="eb49735f471222104bebe454116d43bf">eb49735f471222104bebe454116d43bf</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management ">eb49735f471222104bebe454116d43bf</sys_scope>
+        <sys_scope_delete display_value="">777693b6033f4472835f22a0c4fb6961</sys_scope_delete>
+        <sys_update_name>sp_css_include_934791c393cfea1019e5f6027cba10ff</sys_update_name>
+        <sys_update_version display_value="sp_css_include_934791c393cfea1019e5f6027cba10ff">d6c755c393cfea1019e5f6027cba108e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-03 14:32:47</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
